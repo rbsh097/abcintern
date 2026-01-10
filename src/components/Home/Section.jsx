@@ -38,7 +38,7 @@ export default function Section() {
     return (
         <div className="bg-white py-10">
             <div className="font-inner-tight-1 container mx-auto px-6">
-                <h1 className="md:text-[8.5rem] 2xl:text-[10rem] text-gray-200 font-extrabold uppercase -mt-20">
+                <h1 className="md:text-[8.5rem] 2xl:text-[9rem] text-gray-200 font-extrabold uppercase -mt-20">
                     Our Eco System
                 </h1>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
