@@ -56,11 +56,11 @@ export default function HeroSection() {
         return () => clearInterval(slideInterval);
     }, [slides.length]);
     return (
-        <section className="relative w-full min-h-screen bg-white pt-30 overflow-hidden">
+        <section className="relative w-full min-h-screen bg-white pt-30 py-10 overflow-hidden">
             <div className='container mx-auto flex flex-row  gap-6'>
                 {/* First Section */}
                 <div
-                    className='relative w-2/3 rounded-[2rem] bg-center bg-no-repeat min-h-[700px] flex flex-col justify-center'
+                    className='max-w-7xl mx-auto relative w-2/3 rounded-[2rem] bg-center bg-no-repeat min-h-[700px] flex flex-col justify-center'
                     style={{ backgroundImage: "url('/h11.png')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}
                 >
                     <div className='absolute top-20  flex flex-col gap-6 items-center justify-center text-center px-6 '>
@@ -85,19 +85,18 @@ export default function HeroSection() {
                             </p>
                         </div>
 
-                        {/* Buttons */}
-                        <div className="flex flex-wrap justify-center gap-4 mt-10">
-                            <Link href="/contact" className="group flex items-center gap-2 bg-black text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-all">
-                                Get Started
-                                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                            </Link>
 
-                            <button className="flex items-center gap-2 bg-white text-gray-900 px-8 py-3 rounded-full text-lg font-medium shadow-sm hover:shadow-md transition-all border border-gray-100">
-                                <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center">
-                                    <Play className="w-4 h-4 text-white fill-white ml-0.5" />
-                                </div>
-                                Watch Demo
+                        <div className="max-w-7xl mx-auto relative flex items-center bg-white rounded-full p-1.5 shadow-md border border-gray-100">
+                            <input
+                                type="email"
+                                placeholder="Enter your email and subscribe"
+                                className="w-sm bg-transparent px-6 py-2 outline-none text-gray-700 placeholder:text-gray-400"
+                            />
+                            <button className="p-3 bg-black rounded-full hover:bg-gray-800 transition-colors">
+                                <ArrowRight className="w-5 h-5 text-white" />
                             </button>
+                            {/* </div> */}
+
                         </div>
 
                         {/* Newsletter */}
@@ -105,17 +104,9 @@ export default function HeroSection() {
 
                     {/* Newsletter - Positioned at bottom */}
                     <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-md w-full px-6">
-                        <div className="relative flex items-center bg-white rounded-full p-1.5 shadow-md border border-gray-100">
-                            <input
-                                type="email"
-                                placeholder="Enter your email and subscribe"
-                                className="w-full bg-transparent px-6 py-2 outline-none text-gray-700 placeholder:text-gray-400"
-                            />
-                            <button className="p-3 bg-black rounded-full hover:bg-gray-800 transition-colors">
-                                <ArrowRight className="w-5 h-5 text-white" />
-                            </button>
-                        </div>
-                        <p className="mt-3 text-sm text-gray-500 text-center">Started get any update and information</p>
+
+
+                        {/* <p className="mt-3 text-sm text-gray-500 text-center">Started get any update and information</p> */}
                     </div>
                 </div>
 
@@ -175,8 +166,8 @@ export default function HeroSection() {
 
 
                     {/* Third Section */}
-                    <div className='bg-red-200 min-h-[300px] flex flex-col justify-center bg-cover rounded-[2rem] bg-no-repeat'
-                        style={{ backgroundImage: "url('https://kit.createbigsupply.com/biovanta/wp-content/uploads/sites/67/2025/08/woman-in-white-shirt-show-vaccine-in-a-bottle-near-2024-09-30-04-39-56-utc-1.jpg')" }}>
+                    <div className='bg-red-200 min-h-[300px] shadow-md flex flex-col justify-center bg-cover rounded-[2rem] bg-no-repeat'
+                        style={{ backgroundImage: "url('/h3.png')" }}>
                         third div
                     </div>
                 </div>
