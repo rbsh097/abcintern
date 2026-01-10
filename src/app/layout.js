@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "../components/Global/Header";
+import Footer from "../components/Global/Footer";
 
 const interTight = localFont({
   src: "../../public/InterTight-VariableFont_wght.ttf",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

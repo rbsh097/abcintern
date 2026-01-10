@@ -76,7 +76,7 @@ export default function NextSection() {
 
     return (
         <>
-            <div className="py-10 bg-white text-black">
+            <div id='about' className="py-10 bg-white text-black scroll-mt-16">
                 <div className="container mx-auto flex flex-row bg-gray-100 rounded-lg">
                     <div className="w-1/2 relative rounded-[1rem] p-4">
                         {/* Image Carousel */}

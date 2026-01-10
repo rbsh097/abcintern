@@ -6,19 +6,19 @@ export default function ImageGallery() {
 
     const images = [
         {
-            src: '/h2/1.png',
-            title: 'Check Eligibility Criteria',
-            description: 'Review age, medical history, and condition-specific requirements before joining any clinical study.'
+            src: '/u.png',
+            title: 'Sponsorship',
+            description: 'ABC International sponsored Miss World Myanmar 2023, with Orofresh as the key sponsor, strengthening our global brand presence.'
         },
         {
-            src: '/h2/2.png',
-            title: 'Advanced Research',
-            description: 'Cutting-edge medical research and development for innovative healthcare solutions.'
+            src: '/u2.png',
+            title: 'Asia Business Outlook',
+            description: 'An Emerging Firm With A Vision To Lead The Market & Build A Name In The World Of Medicine.'
         },
         {
-            src: '/h2/3.png',
-            title: 'Quality Testing',
-            description: 'Rigorous quality control and testing procedures ensuring the highest standards.'
+            src: '/u3.png',
+            title: 'Certification',
+            description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
         }
     ];
 
@@ -53,7 +53,7 @@ export default function ImageGallery() {
 
                                 {/* Gradient Overlay - appears on hover */}
                                 <div
-                                    className={`absolute inset-0 bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] transition-opacity duration-500 ${isHovered ? 'opacity-30' : 'opacity-0'
+                                    className={`absolute inset-0 bg-gradient-to-t from-black to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-60' : 'opacity-0'
                                         }`}
                                 />
 
@@ -67,7 +67,7 @@ export default function ImageGallery() {
                                     <p className="text-sm font-medium mb-2 tracking-wide">
                                         {image.title}
                                     </p>
-                                    <h3 className="text-3xl font-bold leading-tight">
+                                    <h3 className="text-2xl font-bold leading-tight">
                                         {image.description}
                                     </h3>
                                 </div>
