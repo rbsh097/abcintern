@@ -100,7 +100,7 @@ const ScientificImpact = () => {
                 <div className="bg-[#f2f2f2] rounded-[2.5rem] overflow-hidden p-6  flex flex-col md:flex-row gap-12 items-center">
 
                     {/* Left Column: Image with Overlays */}
-                    <div className="relative w-full md:w-1/2 rounded-[2rem] overflow-hidden group min-h-[100vh]">
+                    <div className="relative w-full md:w-1/2 rounded-[2rem] overflow-hidden group min-h-[80vh]">
                         <img
                             src="/s.png"
                             alt="Scientific Research"
@@ -110,12 +110,12 @@ const ScientificImpact = () => {
                         {/* 6 Floating Service Chips */}
                         <div className="absolute inset-0 p-6 md:p-8">
                             {[
-                                { index: 0, top: "10%" },
-                                { index: 1, top: "25%" },
-                                { index: 2, top: "40%" },
-                                { index: 3, top: "55%" },
-                                { index: 4, bottom: "20%" },
-                                { index: 5, bottom: "5%" },
+                                { index: 0, top: "5%" },
+                                { index: 1, top: "20%" },
+                                { index: 2, top: "35%" },
+                                { index: 3, top: "50%" },
+                                { index: 4, top: "65%" },
+                                { index: 5, top: "80%" },
                             ].map((pos, i) => {
                                 const service = servicesData[pos.index];
                                 const isActive = activeIndex === pos.index;
