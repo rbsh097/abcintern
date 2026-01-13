@@ -36,7 +36,7 @@ export default function Section() {
     ];
 
     return (
-        <div className="bg-white py-10">
+        <div className="bg-white md:py-10 2xl:py-6">
             <div className="font-inner-tight-1 container mx-auto px-6">
                 <h1 className="md:text-[8.5rem] 2xl:text-[10.2rem] text-gray-200 font-extrabold uppercase -mt-20">
                     Our Eco System

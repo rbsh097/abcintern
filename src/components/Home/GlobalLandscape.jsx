@@ -56,7 +56,7 @@ const countries = [
 
 const GlobalLandscape = () => {
     return (
-        <section className="relative h-screen py-8 overflow-hidden bg-white selection:bg-black selection:text-white">
+        <section className="relative 2xl:h-[90vh] h-screen md:py-8 2xl:pt-2 overflow-hidden bg-white selection:bg-black selection:text-white">
             {/* Background Watermark Text */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
                 <h1 className="text-[18vw] font-bold text-[#F5F5F5] uppercase tracking-tighter opacity-80 leading-none">
@@ -67,7 +67,7 @@ const GlobalLandscape = () => {
             <div className="relative z-10 container mx-auto px-4 text-center">
                 {/* Headings */}
                 <div className="relative z-30 space-y-4">
-                    <h3 className="text-4xl md:text-6xl font-semibold text-gray-400 hover:text-[#ea9237] transition-colors duration-300 cursor-default">
+                    <h3 className="text-4xl md:text-6xl font-semibold text-gray-900 hover:text-[#ea9237] transition-colors duration-300 cursor-default">
                         Global Operations, Local Impact
                     </h3>
                     <p className="max-w-2xl mx-auto text-gray-500 text-lg md:text-xl font-medium leading-relaxed">
