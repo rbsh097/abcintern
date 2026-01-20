@@ -40,14 +40,7 @@ const LeadershipBoard = ({
 
                             {/* Hover Overlay */}
                             <div className="absolute inset-0 bg-[#fae57f]/95 p-10 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                                <h3 className="text-3xl font-bold text-black mb-2">
-                                    {leader.name}
-                                </h3>
-                                <p className="text-black/60 font-bold mb-6 text-sm uppercase tracking-widest">
-                                    {leader.role}
-                                </p>
-                                <div className="w-12 h-1 bg-black mb-6"></div>
-                                <p className="text-black/80 text-lg leading-relaxed font-medium">
+                                <p className="text-black/80 text-[0.9rem] leading-relaxed font-medium">
                                     {leader.bio}
                                 </p>
                             </div>

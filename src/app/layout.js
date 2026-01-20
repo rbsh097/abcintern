@@ -12,6 +12,9 @@ const interTight = localFont({
 export const metadata = {
   title: "ABC International",
   description: "Global Health Care, Pharma Consultancy",
+  icons: {
+    icon: "/a.png",
+  },
 };
 
 export default function RootLayout({ children }) {
