@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 
-// Counter component with animation
 function AnimatedCounter({ target, suffix = '+' }) {
     const [count, setCount] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
@@ -16,44 +15,28 @@ function AnimatedCounter({ target, suffix = '+' }) {
             },
             { threshold: 0.3 }
         );
-        if (counterRef.current) {
-            observer.observe(counterRef.current);
-        }
-        return () => {
-            if (counterRef.current) {
-                observer.unobserve(counterRef.current);
-            }
-        };
+        if (counterRef.current) observer.observe(counterRef.current);
+        return () => observer.disconnect();
     }, [isVisible]);
 
     useEffect(() => {
         if (!isVisible) return;
-
         let startTime;
-        const duration = 2000; // 2 seconds animation
+        const duration = 2000;
 
-        const animate = (currentTime) => {
-            if (!startTime) startTime = currentTime;
-            const progress = Math.min((currentTime - startTime) / duration, 1);
-
-            // Easing function for smooth animation
+        const animate = (time) => {
+            if (!startTime) startTime = time;
+            const progress = Math.min((time - startTime) / duration, 1);
             const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-            const currentCount = Math.floor(easeOutQuart * target);
-
-            setCount(currentCount);
-
-            if (progress < 1) {
-                requestAnimationFrame(animate);
-            } else {
-                setCount(target);
-            }
+            setCount(Math.floor(easeOutQuart * target));
+            if (progress < 1) requestAnimationFrame(animate);
         };
 
         requestAnimationFrame(animate);
     }, [isVisible, target]);
 
     return (
-        <div ref={counterRef} className="text-5xl font-bold text-black hover:text-[#ea9237]">
+        <div ref={counterRef} className="text-3xl lg:text-5xl font-bold text-black hover:text-[#ea9237]">
             {count}{suffix}
         </div>
     );
@@ -61,88 +44,88 @@ function AnimatedCounter({ target, suffix = '+' }) {
 
 export default function NextSection() {
     const [currentImage, setCurrentImage] = useState(0);
-    const images = ['/h4.png', '/t2.png']; // Add your second image path here
+    const images = ['/h4.png', '/t2.png'];
 
-    // Auto-slide images every 5 seconds
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
         }, 5000);
-
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <>
-            <div id='about' className="py-10 bg-white text-black scroll-mt-16">
-                <div className="container mx-auto flex flex-row bg-gray-100 rounded-lg">
-                    <div className="w-1/2 relative rounded-[1rem] p-4">
-                        {/* Image Carousel */}
-                        <div className="relative w-full h-auto rounded-2xl overflow-hidden">
-                            {images.map((image, index) => (
-                                <img
-                                    key={index}
-                                    src={image}
-                                    alt={`Slide ${index + 1}`}
-                                    className={`rounded-2xl w-full h-auto transition-opacity duration-1000 ${index === currentImage ? 'opacity-100' : 'opacity-0 absolute top-0 left-0'
-                                        }`}
-                                />
-                            ))}
-                        </div>
+        <div id="about" className="py-10 bg-white text-black scroll-mt-16">
+            <div className="container mx-auto flex flex-col lg:flex-row bg-gray-100 rounded-lg gap-6 px-4 lg:px-0">
 
-                        {/* Overlay with Statistics */}
-                        <div className="absolute bottom-15 left-1/2 bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] rounded-[1rem] md:w-[120vh] w-[90%] py-8 pl-6 shadow-md -translate-x-1/5">
-                            <div className="grid grid-cols-4 gap-8">
-                                {/* Stat 1 - Positive Reviews */}
-                                <div className="space-y-2">
-                                    <AnimatedCounter target={1000} />
-                                    <div className="text-lg text-black leading-tight">
-                                        Positive Reviews
-                                    </div>
-                                </div>
+                {/* LEFT IMAGE SECTION */}
+                <div className="relative w-full lg:w-1/2 rounded-[1rem] p-4">
+                    <div className="relative w-full rounded-2xl overflow-hidden">
+                        {images.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image}
+                                alt=""
+                                className={`w-full rounded-2xl transition-opacity duration-1000 ${index === currentImage
+                                    ? 'opacity-100'
+                                    : 'opacity-0 absolute inset-0'
+                                    }`}
+                            />
+                        ))}
+                    </div>
 
-                                {/* Stat 2 - Satisfied Clients */}
-                                <div className="space-y-2">
-                                    <AnimatedCounter target={50000} />
-                                    <div className="text-lg text-black leading-tight">
-                                        Satisfied Clients
-                                    </div>
-                                </div>
-
-                                {/* Stat 3 - Experienced Staffs */}
-                                <div className="space-y-2">
-                                    <AnimatedCounter target={250} />
-                                    <div className="text-lg text-black leading-tight">
-                                        Experienced Staffs
-                                    </div>
-                                </div>
-
-                                {/* Stat 4 - Quality Brands */}
-                                <div className="space-y-2">
-                                    <AnimatedCounter target={600} />
-                                    <div className="text-lg text-black leading-tight">
-                                        Quality Brands
-                                    </div>
-                                </div>
+                    {/* STATS OVERLAY */}
+                    <div
+                        className="
+                        absolute bottom-4 md:left-9/8 left-1/2 -translate-x-1/2
+                        w-[95%] lg:w-[120vh]
+                        bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f]
+                        rounded-[1rem] shadow-md
+                        py-4 lg:py-8 px-4 lg:pl-6
+                        "
+                    >
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 text-center lg:text-left">
+                            <div>
+                                <AnimatedCounter target={1000} />
+                                <p className="text-sm lg:text-lg">Positive Reviews</p>
+                            </div>
+                            <div>
+                                <AnimatedCounter target={50000} />
+                                <p className="text-sm lg:text-lg">Satisfied Clients</p>
+                            </div>
+                            <div>
+                                <AnimatedCounter target={250} />
+                                <p className="text-sm lg:text-lg">Experienced Staffs</p>
+                            </div>
+                            <div>
+                                <AnimatedCounter target={600} />
+                                <p className="text-sm lg:text-lg">Quality Brands</p>
                             </div>
                         </div>
-
                     </div>
-                    <div className="w-2/3">
-                        <h1 className="p-4 2xl:text-[5rem]  text-[3rem] leading-[1.2] font-medium ">Welcome to <br /> <span className="text-[3.5rem] 2xl:text-[5rem] font-bold hover:text-[#ea9237]">ABC International</span></h1>
+                </div>
 
-                        <div className="p-4 2xl:p-8 2xl:text-xl text-lg bg-white mr-4 rounded-[1rem]">
-                            <p className="mb-4">ABC International is one of the fastest-growing healthcare conglomerates with a vision to lead the market and build trust in the world of medicine.</p>
-                            <p className="mb-4">We, at ABC International, are driven by the goal to support various verticals in the medical field to establish their brand and narrate their growth story. ABC International is a strategic planner, experienced executor, regulatory advisor, and marketer of pharmaceutical products.</p>
-                            <p className="mb-4">Our strategists work diligently to evaluate the most pressing issues and opportunities that can elevate our clients' growth trajectory. Our insight helps us expand beyond political boundaries including Myanmar & worldwide.</p>
-                        </div>
+                {/* RIGHT CONTENT */}
+                <div className="w-full lg:w-2/3">
+                    <h1 className="p-4 text-2xl sm:text-3xl lg:text-[3rem] 2xl:text-[5rem] leading-tight font-medium">
+                        Welcome to <br />
+                        <span className="font-bold hover:text-[#ea9237]">
+                            ABC International
+                        </span>
+                    </h1>
 
-
+                    <div className="p-4 lg:p-8 text-sm sm:text-base lg:text-lg 2xl:text-xl bg-white rounded-[1rem]">
+                        <p className="mb-4">
+                            ABC International is one of the fastest-growing healthcare conglomerates with a vision to lead the market and build trust in the world of medicine.
+                        </p>
+                        <p className="mb-4">
+                            We support multiple medical verticals as strategic planners, regulatory advisors, and marketers of pharmaceutical products.
+                        </p>
+                        <p>
+                            Our insights help expand growth beyond political boundaries including Myanmar and worldwide.
+                        </p>
                     </div>
-
                 </div>
             </div>
-
-        </>
+        </div>
     );
 }

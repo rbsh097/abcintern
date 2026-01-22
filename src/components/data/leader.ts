@@ -86,6 +86,4 @@ export const financeTeam = [
         image: "https://abcinternational.global/img/ChoMayThin.jpg",
         bio: "Around a decade years of pharmaceutical sales and marketing  experience in Myanmar Cho May a sound experience of pharmaceutical product management, Product Training, Market Access and launch planning. Prior to joining ABC, she has been working for Shwin Chan and at Medi Myanmar as a Product Executive."
     },
-
-
 ];

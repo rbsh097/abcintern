@@ -7,8 +7,8 @@ export default function ImageGallery() {
     const images = [
         {
             src: '/u.png',
-            title: 'Sponsorship',
-            description: 'ABC International sponsored Miss World Myanmar 2023, with Orofresh as the key sponsor, strengthening our global brand presence.'
+            title: 'Social Responsibility',
+            description: 'R-Biomeds Singapore donated essential medicines to Cambodia’s border-affected communities in partnership with Pharmacie De La Gare and Ke Sinoun Hospital, Battambang.'
         },
         {
             src: '/u2.png',
@@ -24,7 +24,7 @@ export default function ImageGallery() {
 
     return (
         <div
-            className="bg-white py-16"
+            className="bg-white md:py-16 px-10"
             onMouseLeave={() => setHoveredIndex(0)}
         >
             <div className="container mx-auto ">
@@ -37,18 +37,18 @@ export default function ImageGallery() {
                             <div
                                 key={index}
                                 onMouseEnter={() => setHoveredIndex(index)}
-                                className={`relative rounded-3xl overflow-hidden cursor-pointer transition-all duration-700  ${isHovered
-                                    ? '2xl:w-[900px] w-[700px] h-[600px] 2xl:h-[750px]'
+                                className={`relative rounded-3xl overflow-hidden cursor-pointer transition-all duration-700 md:bg-transparent bg-black  ${isHovered
+                                    ? '2xl:w-[900px] md:w-[700px] md:h-[600px] w-[1000px] h-[400px]  2xl:h-[750px]'
                                     : isOtherHovered
-                                        ? '2xl:w-[400px] w-[200px] h-[600px] 2xl:h-[750px]'
-                                        : '2xl:w-[400px] w-[350px] h-[600px] 2xl:h-[750px]'
+                                        ? '2xl:w-[400px] md:w-[200px] w-[200px] h-[400px] md:h-[600px] 2xl:h-[750px]'
+                                        : '2xl:w-[400px] md:w-[350px] w-[900px] h-[400px] md:h-[600px] 2xl:h-[750px]'
                                     }`}
                             >
                                 {/* Image */}
                                 <img
                                     src={image.src}
                                     alt={image.title}
-                                    className="2xl:w-[800px] w-[700px] h-full md;object-cover max-w-none"
+                                    className="2xl:w-[800px] w-[700px] md:h-full md:object-cover object-contain md:max-w-none"
                                 />
 
                                 {/* Gradient Overlay - appears on hover */}
@@ -59,7 +59,7 @@ export default function ImageGallery() {
 
                                 {/* Text Content - animates from bottom on hover */}
                                 <div
-                                    className={`absolute bottom-0 left-0 right-0 text-white transition-all duration-700 p-6 ${isHovered
+                                    className={`absolute bottom-0 left-0 right-0 text-white transition-all duration-700 p-6 md:bg-transparent bg-black ${isHovered
                                         ? 'translate-y-0 opacity-100'
                                         : 'translate-y-full opacity-0'
                                         }`}
@@ -67,7 +67,7 @@ export default function ImageGallery() {
                                     <p className="text-sm font-medium mb-2 tracking-wide">
                                         {image.title}
                                     </p>
-                                    <h3 className="text-2xl font-bold leading-tight">
+                                    <h3 className="md:text-2xl sm:bg-black md:bg-transparent text-base font-bold leading-tight">
                                         {image.description}
                                     </h3>
                                 </div>

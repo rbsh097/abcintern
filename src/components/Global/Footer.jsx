@@ -119,16 +119,16 @@ const Footer = () => {
 
                 {/* Lime Green Banner */}
                 <div className="bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] text-black rounded-[1.5rem] p-8 flex flex-col md:flex-row justify-between items-center transition-all hover:shadow-2xl hover:shadow-yellow-100">
-                    <h3 className="text-black text-3xl md:text-[1.5rem] 2xl:text-[1.8rem] font-bold text-center md:text-left md:mb-0  leading-tight">
+                    <h3 className="text-black text-2xl md:text-[1.5rem] 2xl:text-[1.8rem] font-bold text-center md:text-left md:mb-0  leading-tight">
                         Get in touch with ABC International for business, partnership, or healthcare inquiries.
                     </h3>
-                    <button className="bg-[#1a1a1a] text-white px-8 py-2 rounded-2xl font-extrabold text-lg hover:bg-black transition-all transform hover:scale-105 active:scale-95 shadow-2xl">
+                    <button className="bg-[#1a1a1a] md:mt-0 mt-4 text-white px-8 py-2 rounded-2xl font-extrabold text-lg hover:bg-black transition-all transform hover:scale-105 active:scale-95 shadow-2xl">
                         Call Us Now
                     </button>
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-medium">
+                <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 md:text-sm text-xs font-medium">
                     <p>© Copyright 2026 - ABC International All Rights Reserved Copyright.</p>
                     <div className="flex gap-8 mt-4 md:mt-0">
                         <a href="https://rbshstudio.com" target="_blank" className="transition-colors">Powered By <span className="text-[#ea9237] font-bold">RBSH Studio</span> </a>

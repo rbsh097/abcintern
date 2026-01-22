@@ -2,43 +2,49 @@ import React from "react";
 
 export default function OurPeopleSection() {
     return (
-        <section className=" py-10 h-[95vh] bg-white mt-20">
-            {/* Left Column: Vertical Split */}
-            <div className="container mx-auto grid grid-rows-2 gap-4">
-                <div className="w-full grid grid-cols-2 gap-4  rounded-[2rem] ">
-                    {/* Top Half: Background Image */}
+        <section className="py-10 bg-white mt-20 h-auto lg:h-[95vh]">
+            <div className="container mx-auto px-4 lg:px-0
+                grid grid-cols-1
+                lg:grid-rows-[2.2fr_1fr]
+                gap-4
+            ">
+
+                {/* TOP SECTION */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 rounded-[2rem]">
+
+                    {/* TEXT + BG IMAGE */}
                     <div
                         style={{ backgroundImage: "url('/p.png')" }}
-                        className=" w-full bg-cover bg-center bg-no-repeat rounded-[2rem] "
+                        className="w-full bg-cover bg-center bg-no-repeat rounded-[2rem] flex"
                     >
-                        {/* Optional overlay or empty if image is the primary focus */}
-                        <div className="p-6 2xl:p-20 rounded-[2rem]">
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black tracking-tight p-6 hover:text-[#e57f00]">
+                        <div className="p-6 sm:p-8 lg:p-12 2xl:p-20 rounded-[2rem] flex flex-col justify-center">
+                            <h1 className="text-2xl sm:text-3xl lg:text-5xl 2xl:text-6xl font-bold text-black tracking-tight mb-6 hover:text-[#e57f00]">
                                 Our People
                             </h1>
-                            <p className="text-lg md:text-lg text-black/80 font-medium leading-relaxed p-6">
-                                ABC International is supported by a team of like-minded and highly experienced professionals who united with a shared vision of establishing a reputable and trusted healthcare organization. This vision is underpinned by shared values and a strong commitment to customer-centricity, all while upholding the highest standards of corporate governance and demonstrating a dedication to Corporate Social Responsibility (CSR). Additionally, we make it a priority to acknowledge and appreciate our employees for their unique contributions each day.
+                            <p className="text-sm sm:text-base lg:text-lg text-black/80 font-medium leading-relaxed max-w-xl">
+                                ABC International is supported by a team of like-minded and highly experienced professionals who united with a shared vision of building a trusted healthcare organization. This vision is driven by strong values, customer-centricity, ethical governance, CSR, and recognition of employee contributions.
                             </p>
                         </div>
                     </div>
-                    <div className="w-full">
 
+                    {/* IMAGE */}
+                    <div className="w-full h-[260px] sm:h-[340px] lg:h-full">
                         <img
                             src="/p1.png"
                             alt="Our Team"
                             className="w-full h-full object-cover rounded-[2rem]"
                         />
                     </div>
-
-
-                    {/* Bottom Half: Yellow Background with Text */}
-
                 </div>
 
-                {/* Right Column: Full Height Image */}
-                <div className="h-full lg:h-1/3 bg-gray-100 flex flex-col justify-center px-8 md:px-8 py-16 lg:py-0 rounded-[2rem]">
-                    <p className="text-lg md:text-lg p-6 text-black/80 font-medium leading-relaxed">
-                        ABC International is backed by a team of like minded and highly experienced professionals who came together with a shared vision of creating a trusted healthcare organisation of repute that is driven by shared values and customer centricity while adhering to highest forms of corporate governance & committed to CSR where employees are recognised for the unique contribution they make every day.
+                {/* BOTTOM TEXT BLOCK */}
+                <div className="w-full bg-gray-100 rounded-[2rem]
+                    flex items-center
+                    px-6 sm:px-8 lg:px-12
+                    py-8 lg:py-0
+                ">
+                    <p className="text-sm sm:text-base lg:text-lg text-black/80 font-medium leading-relaxed max-w-7xl">
+                        ABC International is backed by a team of like-minded and highly experienced professionals who came together with a shared vision of creating a trusted healthcare organization of repute, driven by values, customer centricity, ethical governance, and CSR where employees are recognized for the unique contributions they make every day.
                     </p>
                 </div>
 
