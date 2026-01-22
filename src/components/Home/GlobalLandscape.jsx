@@ -1,19 +1,77 @@
 "use client";
+import { useEffect, useState } from "react";
 
-import React from "react";
+function useIsDesktop() {
+    const [isDesktop, setIsDesktop] = useState(false);
+
+    useEffect(() => {
+        const check = () => setIsDesktop(window.innerWidth >= 768);
+        check();
+        window.addEventListener("resize", check);
+        return () => window.removeEventListener("resize", check);
+    }, []);
+
+    return isDesktop;
+}
 
 const countries = [
-    { name: "Canada", flag: "https://flagcdn.com/w80/ca.png", top: "40%", left: "15%" },
-    { name: "India", flag: "https://flagcdn.com/w80/in.png", top: "55%", right: "15%" },
-    { name: "Nepal", flag: "https://flagcdn.com/w80/np.png", top: "38%", right: "25%" },
-    { name: "Singapore", flag: "https://flagcdn.com/w80/sg.png", top: "85%", left: "20%" },
-    { name: "Philippines", flag: "https://flagcdn.com/w80/ph.png", top: "55%", left: "10%" },
-    { name: "Laos", flag: "https://flagcdn.com/w80/la.png", top: "68%", left: "15%" },
-    { name: "Myanmar", flag: "https://flagcdn.com/w80/mm.png", top: "70%", right: "15%" },
-    { name: "Cambodia", flag: "https://flagcdn.com/w80/kh.png", top: "88%", right: "15%" },
+
+    {
+        name: "India",
+        flag: "https://flagcdn.com/w80/in.png",
+        mobile: { top: "45%", left: "72%" },
+        desktop: { top: "35%", right: "15%" },
+    },
+    {
+        name: "Nepal",
+        flag: "https://flagcdn.com/w80/np.png",
+        mobile: { top: "25%", left: "70%" },
+        desktop: { top: "20%", right: "25%" },
+    },
+
+    {
+        name: "Myanmar",
+        flag: "https://flagcdn.com/w80/mm.png",
+        mobile: { top: "65%", left: "65%" },
+        desktop: { top: "55%", right: "10%" },
+    },
+    {
+        name: "Cambodia",
+        flag: "https://flagcdn.com/w80/kh.png",
+        mobile: { top: "78%", left: "48%" },
+        desktop: { top: "68%", right: "15%" },
+    },
+    {
+        name: "Canada",
+        flag: "https://flagcdn.com/w80/ca.png",
+        mobile: { top: "22%", left: "15%" },
+        desktop: { top: "20%", left: "15%" }, // ⬅ moved right (was 65%)
+    },
+    {
+        name: "Singapore",
+        flag: "https://flagcdn.com/w80/sg.png",
+        mobile: { top: "72%", left: "12%" },
+        desktop: { top: "35%", left: "10%" }, // ⬅ moved right (was -80%)
+    },
+    {
+        name: "Philippines",
+        flag: "https://flagcdn.com/w80/ph.png",
+        mobile: { top: "40%", left: "6%" },
+        desktop: { top: "49%", left: "10%" }, // ⬅ moved right (was 10%)
+    },
+    {
+        name: "Laos",
+        flag: "https://flagcdn.com/w80/la.png",
+        mobile: { top: "52%", left: "10%" },
+        desktop: { top: "68%", left: "20%" }, // ⬅ moved right (was 85%)
+    },
+
 ];
 
+
 const GlobalLandscape = () => {
+    const isDesktop = useIsDesktop();
+
     return (
         <section className="relative h-auto md:h-screen 2xl:h-[90vh] py-16 md:py-8 2xl:pt-2 overflow-hidden bg-white">
 
@@ -54,40 +112,43 @@ const GlobalLandscape = () => {
                     </div>
 
                     {/* Country Markers */}
-                    {countries.map((country, index) => (
-                        <div
-                            key={index}
-                            className="
-                                absolute z-20 transition-transform duration-300
-                                scale-75 sm:scale-90 md:scale-100
-                                md:-mt-40
-                            "
-                            style={{
-                                top: country.top,
-                                left: country.left,
-                                right: country.right,
-                            }}
-                        >
-                            <div className="
-                                flex items-center gap-2 md:gap-6 md:mt-0 -mt-20
-                                px-3 py-1.5 md:px-4 md:py-2
-                                bg-white/80 backdrop-blur-md
-                                border border-white/50
-                                rounded-full shadow-md
-                            ">
-                                <div className="relative w-6 h-6 md:w-10 md:h-10 rounded-full overflow-hidden border">
-                                    <img
-                                        src={country.flag}
-                                        alt={country.name}
-                                        className="w-full h-full object-cover"
-                                    />
+
+                    {countries.map((country, index) => {
+                        const position = isDesktop ? country.desktop : country.mobile;
+
+                        return (
+                            <div
+                                key={index}
+                                className="absolute z-20 transition-transform duration-300 scale-75 md:scale-100"
+                                style={{
+                                    top: position.top,
+                                    left: position.left,
+                                    right: position.right,
+                                }}
+                            >
+                                <div className="
+        flex items-center gap-2 md:gap-6
+        px-3 py-1.5 md:px-4 md:py-2
+        bg-white/80 backdrop-blur-md
+        border border-white/50
+        rounded-full shadow-md
+      ">
+                                    <div className="relative w-8 h-8 md:w-10 md:h-10 rounded-full overflow-hidden border">
+                                        <img
+                                            src={country.flag}
+                                            alt={country.name}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                    <span className="text-xs sm:text-lg md:text-xl font-semibold text-gray-800 whitespace-nowrap">
+                                        {country.name}
+                                    </span>
                                 </div>
-                                <span className="text-xs sm:text-sm md:text-lg font-semibold text-gray-800 whitespace-nowrap">
-                                    {country.name}
-                                </span>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
+
+
                 </div>
             </div>
         </section>

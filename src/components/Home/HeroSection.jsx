@@ -103,20 +103,18 @@ export default function HeroSection() {
 
                     {/* CAROUSEL */}
                     <div
-                        className="relative min-h-[360px] lg:min-h-[700px]
+                        className="relative min-h-[500px] lg:min-h-[700px]
                                    bg-cover rounded-[2rem] bg-no-repeat transition-all duration-700"
                         style={{ backgroundImage: `url('${slides[currentSlide].image}')` }}
                     >
                         {slides[currentSlide].showOverlay && (
                             <div
-                                className="
-        absolute bottom-4 left-4
-        lg:left-4
-        
-        bg-white rounded-lg
-        px-4 py-3 lg:p-6
-        w-auto max-w-[90%] lg:max-w-md
-        "
+                                className="absolute bottom-4 left-4
+                                           lg:left-4
+                                           bg-white rounded-lg
+                                           px-4 py-3 lg:p-6
+                                           w-auto max-w-[90%] lg:max-w-md
+                                        "
                             >
                                 <div className="flex items-center gap-3 lg:gap-4">
                                     {/* Number */}
