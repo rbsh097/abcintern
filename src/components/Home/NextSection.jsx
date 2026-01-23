@@ -76,7 +76,7 @@ export default function NextSection() {
                     {/* STATS OVERLAY */}
                     <div
                         className="
-                        absolute bottom-4 md:left-9/8 left-1/2 -translate-x-1/2
+                        absolute 2xl:bottom-14 bottom-4 lg:bottom-14 md:left-9/8 left-1/2 -translate-x-1/2
                         w-[95%] lg:w-[120vh]
                         bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f]
                         rounded-[1rem] shadow-md
@@ -113,7 +113,7 @@ export default function NextSection() {
                         </span>
                     </h1>
 
-                    <div className="p-4 lg:p-8 text-sm sm:text-base lg:text-lg 2xl:text-xl bg-white rounded-[1rem]">
+                    <div className="p-4 lg:p-8 text-sm sm:text-base lg:text-xl 2xl:text-2xl bg-white rounded-[1rem] 2xl:mr-10 lg:mr-10">
                         <p className="mb-4">
                             ABC International is one of the fastest-growing healthcare conglomerates with a vision to lead the market and build trust in the world of medicine.
                         </p>
