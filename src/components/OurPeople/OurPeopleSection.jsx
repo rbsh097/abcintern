@@ -2,7 +2,7 @@ import React from "react";
 
 export default function OurPeopleSection() {
     return (
-        <section className="py-10 bg-white mt-20 h-auto lg:h-[95vh]">
+        <section className="py-10 bg-white pt-30 h-auto lg:h-[95vh]">
             <div className="container mx-auto px-4 lg:px-0
                 grid grid-cols-1
                 lg:grid-rows-[2.2fr_1fr]
