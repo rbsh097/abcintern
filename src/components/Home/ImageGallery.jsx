@@ -19,6 +19,21 @@ export default function ImageGallery() {
             src: '/u3.png',
             title: 'Certification',
             description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
+        },
+        {
+            src: '/u3.png',
+            title: 'Certification',
+            description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
+        },
+        {
+            src: '/u3.png',
+            title: 'Certification',
+            description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
+        },
+        {
+            src: '/u3.png',
+            title: 'Certification',
+            description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
         }
     ];
 
@@ -40,15 +55,15 @@ export default function ImageGallery() {
                                 className={`relative rounded-3xl overflow-hidden cursor-pointer transition-all duration-700 md:bg-transparent bg-black  ${isHovered
                                     ? '2xl:w-[900px] md:w-[700px] md:h-[600px] w-[1000px] h-[400px]  2xl:h-[750px]'
                                     : isOtherHovered
-                                        ? '2xl:w-[400px] md:w-[200px] w-[200px] h-[400px] md:h-[600px] 2xl:h-[750px]'
-                                        : '2xl:w-[400px] md:w-[350px] w-[900px] h-[400px] md:h-[600px] 2xl:h-[750px]'
+                                        ? '2xl:w-[400px] md:w-[100px] w-[200px] h-[400px] md:h-[600px] 2xl:h-[750px]'
+                                        : '2xl:w-[400px] md:w-[330px] w-[900px] h-[400px] md:h-[600px] 2xl:h-[750px]'
                                     }`}
                             >
                                 {/* Image */}
                                 <img
                                     src={image.src}
                                     alt={image.title}
-                                    className="2xl:w-[800px] w-[700px] md:h-full md:object-cover object-contain md:max-w-none"
+                                    className="2xl:w-[800px] w-[700px] md:h-full md:object-contain object-contain md:max-w-none"
                                 />
 
                                 {/* Gradient Overlay - appears on hover */}

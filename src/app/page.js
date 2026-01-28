@@ -5,6 +5,9 @@ import GlobalLandscape from "@/components/Home/GlobalLandscape";
 import Section from "@/components/Home/Section";
 import ImageGallery from "@/components/Home/ImageGallery";
 import ProductSection from "@/components/Home/ProductSection";
+import OurBusinesses from "@/components/Home/OurBusinesses";
+import ArticlesSection from "@/components/Home/ArticlesSection";
+import HealthCalculators from "@/components/Home/HealthCalculators";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
         <NextSection />
         <GlobalLandscape />
         <Section />
+        <HealthCalculators />
+        <OurBusinesses />
+        <ArticlesSection />
         <ProductSection />
         <ImageGallery />
       </main>

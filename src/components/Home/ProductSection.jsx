@@ -38,9 +38,9 @@ export default function ProductSection() {
                 {/* RIGHT IMAGE */}
                 <div className="w-full lg:w-1/2 flex justify-center items-center">
                     <img
-                        src="/Partners.png"
+                        src="/ourbusinesspartner.png"
                         alt="Partners"
-                        className="w-full max-w-md lg:max-w-full object-contain"
+                        className="w-full max-w-md h-[80vh] lg:max-w-full object-contain"
                     />
                 </div>
             </div>

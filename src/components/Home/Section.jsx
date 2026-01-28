@@ -47,12 +47,12 @@ export default function Section() {
                         {leftCards.map((card, index) => (
                             <div
                                 key={index}
-                                className="bg-white border border-gray-200 hover:border-0 hover:bg-gradient-to-br hover:from-white hover:to-[#fae57f] rounded-2xl p-6 group"
+                                className="bg-white border border-gray-200 hover:border-0 hover:bg-gradient-to-br hover:from-white hover:to-[#fae57f] rounded-2xl p-8 group"
                             >
                                 <div className="flex items-start gap-4">
 
                                     <div>
-                                        <h3 className="text-2xl font-bold text-black mb-2  transition-colors">
+                                        <h3 className="text-2xl font-bold text-black mb-4  transition-colors">
                                             {card.title}
                                         </h3>
                                         <p className="text-gray-600 text-sm leading-relaxed">
@@ -68,7 +68,7 @@ export default function Section() {
                     <div className="flex items-center justify-center">
                         <div className="relative w-full max-w-md">
                             <img
-                                src="/a.png"
+                                src="/tree.png"
                                 alt="ABC International"
                                 className="w-full h-auto rounded-3xl"
                             />
@@ -80,11 +80,11 @@ export default function Section() {
                         {rightCards.map((card, index) => (
                             <div
                                 key={index}
-                                className="bg-white border border-gray-200 hover:border-0 hover:bg-gradient-to-br hover:from-white hover:to-[#fae57f] rounded-2xl p-6 group"
+                                className="bg-white border border-gray-200 hover:border-0 hover:bg-gradient-to-br hover:from-white hover:to-[#fae57f] rounded-2xl p-8 group"
                             >
-                                <div className="flex items-start gap-4">
+                                <div className="flex items-start gap-6">
                                     <div>
-                                        <h3 className="text-2xl font-bold text-black mb-2 transition-colors">
+                                        <h3 className="text-2xl font-bold text-black mb-4 transition-colors">
                                             {card.title}
                                         </h3>
                                         <p className="text-gray-600 text-sm leading-relaxed">
