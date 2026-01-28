@@ -44,7 +44,7 @@ function AnimatedCounter({ target, suffix = '+' }) {
 
 export default function NextSection() {
     const [currentImage, setCurrentImage] = useState(0);
-    const images = ['/h4.png', '/t2.png'];
+    const images = ['/t2.png', '/auntum.png'];
 
     useEffect(() => {
         const interval = setInterval(() => {

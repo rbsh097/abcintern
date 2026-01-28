@@ -2,6 +2,7 @@
 import React from 'react';
 import { FaFacebook } from "react-icons/fa6";
 import { RxLinkedinLogo } from "react-icons/rx";
+import { Mail, Phone, MapPin, Warehouse, Building2 } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -19,101 +20,91 @@ const Footer = () => {
             <div className="container mx-auto px-6 relative z-10">
 
                 {/* Top Section */}
-                <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-10">
-                    <div className="max-w-7xl">
-                        <h2 className="text-6xl md:text-6xl font-bold text-gray-500 leading-tight mb-8 hover:text-[#ea9237] transition-colors cursor-pointer">
-                            We'd love to hear from you!
-                        </h2>
-                        <div className='max-w-3xl'>
-
-
-                            {/* Links/Contact Columns */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-12">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-1 text-black">Send a Message</h4>
-                                    <p className="text-gray-500 mb-2 hover:text-[#ea9237] transition-colors cursor-pointer font-medium">info@abcinternational.com</p>
-
-                                    <h4 className="font-bold text-lg mt-3 mb-1 text-black">Call us</h4>
-                                    <p className="text-gray-500 mb-2 hover:text-[#ea9237] transition-colors cursor-pointer font-medium">
-                                        +95 9979386000</p>
-
-                                    <h4 className="font-bold text-lg mt-3 mb-1 text-black ">Address</h4>
-                                    <div className="space-y-4">
-                                        <div>
-                                            <p className="text-black font-bold text-sm ">Head Office </p>
-                                            <p className="text-gray-500 hover:text-[#ea9237] transition-colors cursor-pointer font-medium leading-relaxed">
-                                                Room I+J, 2nd Floor, Atrium Condominium, Upper Pansodan Rd, Mingalar Taung Nyunt Township, Yangon.
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p className="text-black font-bold text-sm ">Warehouse </p>
-                                            <p className="text-gray-500 hover:text-[#ea9237] transition-colors cursor-pointer font-medium leading-relaxed">
-                                                No.91,92 Mya Khwar Nyo ( Aung Kaung Kyaw ) Housing, Thaketa Township, Yangon, Myanmar.
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p className="text-black font-bold text-sm ">Mandalay Office </p>
-                                            <p className="text-gray-500 hover:text-[#ea9237] transition-colors cursor-pointer font-medium leading-relaxed">
-                                                No.22, Ward (NarGyi/2), Myothit 1 quarter, Chan Mya Thar Si Township, Mandalay.
-                                            </p>
-                                        </div>
+                <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-16">
+                    <div className="w-full md:w-[70%]">
+                        <div className='w-full'>
+                            {/* Office Addresses Grid (Highlighted) */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {/* Head Office Card */}
+                                <div className="bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] rounded-[2rem] p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-500  border border-white/5">
+                                    <div className="w-15 h-15 bg-[#ea9237] rounded-full flex items-center justify-center mb-5 shadow-lg shadow-[#ea9237]/20 group-hover:scale-110 transition-transform">
+                                        <Building2 className="w-8 h-8 text-white" />
                                     </div>
+                                    <p className="text-black text-lg font-black uppercase mb-2">Head Office</p>
+                                    <p className="text-black text-md font-medium leading-relaxed opacity-90">
+                                        Room I+J, 2nd Floor, Atrium Condominium, Upper Pansodan Rd, Mingalar Taung Nyunt Township, Yangon.
+                                    </p>
+                                </div>
+                                {/* Warehouse Card */}
+                                <div className="bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] rounded-[2rem] p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-500  border border-white/5">
+                                    <div className="w-15 h-15 bg-[#ea9237] rounded-full flex items-center justify-center mb-5 shadow-lg shadow-[#ea9237]/20 group-hover:scale-110 transition-transform">
+                                        <Warehouse className="w-8 h-8 text-white" />
+                                    </div>
+                                    <p className="text-black text-lg font-black uppercase mb-2">Warehouse</p>
+                                    <p className="text-black text-md font-medium leading-relaxed opacity-90">
+                                        No.91,92 Mya Khwar Nyo Housing, Thaketa Township, Yangon, Myanmar.
+                                    </p>
                                 </div>
 
-                                <div className="grid grid-cols-2 gap-10">
-                                    <div>
-                                        <h4 className="font-bold text-lg mb-4 text-black">Quick Links</h4>
-                                        <ul className="space-y-3">
-                                            <li><a href="/" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium">Home</a></li>
-
-                                            <li><a href="/service" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium">Service</a></li>
-                                            <li><a href="#" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium">Our Products</a></li>
-                                            <li><a href="/ourpeople" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium">Our People</a></li>
-
-                                        </ul>
+                                {/* Mandalay Office Card */}
+                                <div className="bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] rounded-[2rem] p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-500  border border-white/5">
+                                    <div className="w-15 h-15 bg-[#ea9237] rounded-full flex items-center justify-center mb-5 shadow-lg shadow-[#ea9237]/20 group-hover:scale-110 transition-transform">
+                                        <MapPin className="w-8 h-8 text-white" />
                                     </div>
-                                    <div>
-                                        <h4 className="font-bold text-lg mb-4 text-black">Our Products</h4>
-                                        <ul className="space-y-3">
-                                            <li><a href="#" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium whitespace-nowrap">ABC</a></li>
-                                            <li><a href="#" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium whitespace-nowrap">ABC</a></li>
-                                            <li><a href="#" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium whitespace-nowrap">ABC</a></li>
-                                            <li><a href="#" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium whitespace-nowrap">ABC</a></li>
-                                            <li><a href="#" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium whitespace-nowrap">ABC</a></li>
-                                            <li><a href="#" className="text-gray-500 hover:text-[#ea9237] transition-colors font-medium whitespace-nowrap">ABC</a></li>
-                                        </ul>
+                                    <p className="text-black text-lg font-black uppercase mb-2">Mandalay Office</p>
+                                    <p className="text-black text-md font-medium leading-relaxed opacity-90">
+                                        No.22, Ward NarGyi/2, Chan Mya Thar Si Township, Mandalay.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col sm:flex-row gap-10 pt-12">
+                                <div className="group cursor-pointer">
+                                    <h4 className="font-bold text-lg mb-1 text-black group-hover:text-[#ea9237] transition-all">Send a Message</h4>
+                                    <div className="flex items-center gap-3">
+                                        <Mail className="w-4 h-4 text-[#ea9237]" />
+                                        <p className="text-gray-500 font-medium group-hover:text-black transition-colors">info@abcinternational.com</p>
+                                    </div>
+                                </div>
+                                <div className="group cursor-pointer">
+                                    <h4 className="font-bold text-lg mb-1 text-black group-hover:text-[#ea9237] transition-all">Call us</h4>
+                                    <div className="flex items-center gap-3">
+                                        <Phone className="w-4 h-4 text-[#ea9237]" />
+                                        <p className="text-gray-500 font-medium group-hover:text-black transition-colors">+95 9979386000</p>
+                                    </div>
+                                </div>
+                                <div className='flex flex-col gap-4'>
+                                    <h1 className="font-bold text-xl text-black">Follow us on:</h1>
+                                    <div className='flex flex-row gap-4'>
+                                        <a href="https://www.facebook.com/abcinternational.global" className="text-black w-6 h-6 flex items-center justify-center hover:bg-[#ea9237] rounded-full transition-all transform hover:scale-110 group ">
+                                            <FaFacebook className='w-full h-full' />
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/abcinternational-mm/" className="text-black w-6 h-6 flex items-center justify-center hover:bg-[#ea9237] rounded-full transition-all transform hover:scale-110 group ">
+                                            <RxLinkedinLogo className='w-full h-full' />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
                     {/* Circular Badge and Form */}
-                    <div className="w-full md:w-[400px]">
+                    <div className="w-full md:w-[30%]">
 
 
                         {/* Contact Form */}
                         <div className="bg-white rounded-2xl">
-                            <h4 className="font-bold text-2xl mb-6 text-black">Get a Proposal</h4>
+                            <h4 className="font-bold text-2xl mb-6 text-black">Get in Touch</h4>
                             <form className="space-y-4">
-                                <input type="text" placeholder="Company name" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-[#ea9237] transition-colors placeholder:text-gray-400" />
-                                <input type="email" placeholder="Your email address" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-[#ea9237] transition-colors placeholder:text-gray-400" />
-                                <input type="tel" placeholder="Phone no." className="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-[#ea9237] transition-colors placeholder:text-gray-400" />
-                                <textarea placeholder="Tell us about your project" rows="4" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-[#ea9237] transition-colors resize-none placeholder:text-gray-400"></textarea>
+                                <input type="text" placeholder="Name" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-[#ea9237] transition-colors placeholder:text-gray-400" />
+                                <input type="email" placeholder="Email" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-[#ea9237] transition-colors placeholder:text-gray-400" />
+                                <textarea placeholder="Comment or Message" rows="4" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-[#ea9237] transition-colors resize-none placeholder:text-gray-400"></textarea>
                                 <button type="submit" className="w-full py-4 bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] text-black font-bold rounded-full hover:bg-[#ea9237] transition-all transform hover:scale-[1.02] ">
-                                    Request a Consultation
+                                    Submit
                                 </button>
                             </form>
                         </div>
-                        <div className='flex flex-row gap-4 mt-18 px-6'>
-                            <h1 className="font-bold text-xl text-black">Follow us on:</h1>
-                            <a href="https://www.facebook.com/abcinternational.global" className="text-black w-6 h-6 flex items-center justify-center hover:bg-[#ea9237] transition-all transform hover:scale-110 group ">
-                                <FaFacebook className='w-full h-full' />
-                            </a>
-                            <a href="https://www.linkedin.com/company/abcinternational-mm/" className="text-black w-6 h-6 flex items-center justify-center hover:bg-[#ea9237] transition-all transform hover:scale-110 group ">
-                                <RxLinkedinLogo className='w-full h-full' />
-                            </a>
-                        </div>
+
                     </div>
                 </div>
 
