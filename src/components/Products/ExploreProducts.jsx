@@ -4,41 +4,61 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const categories = [
-    { id: 'Personal Care', title: 'Personal care', image: 'https://images.unsplash.com/photo-1540344448520-21396a5d44d4?w=400&h=400&fit=crop', tab: 'wellness', slug: 'personal-care' },
-    { id: 'sports-nutrition', title: 'Sports Nutrition', image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=400&fit=crop', tab: 'wellness', slug: 'sports-nutrition' },
-    { id: 'general-wellbeing', title: 'General Wellbeing', image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=400&fit=crop', tab: 'wellness', slug: 'general-wellbeing' },
-    { id: 'vitamins', title: 'Vitamins', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop', tab: 'wellness', slug: 'vitamins' },
-    { id: 'hair-care', title: 'Hair Care', image: 'https://images.unsplash.com/photo-1522337360788-8b13df772ec2?w=400&h=400&fit=crop', tab: 'wellness', slug: 'hair-care' },
-    { id: 'kiddz-care', title: 'Kiddz Care', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=400&fit=crop', tab: 'wellness', slug: 'kiddz-care' },
-    { id: 'probiotics', title: 'Probiotics', image: 'https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=400&h=400&fit=crop', tab: 'wellness', slug: 'probiotics' },
-    { id: 'herbal-meds', title: 'Herbal Meds', image: 'https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=400&h=400&fit=crop', tab: 'wellness', slug: 'herbal-meds' },
-    { id: 'cough-cold', title: 'Cough & Cold', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop', tab: 'wellness', slug: 'cough-cold' },
-    { id: 'mens-care', title: 'Men\'s Care', image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=400&fit=crop', tab: 'wellness', slug: 'mens-care' },
-    { id: 'womens-care', title: 'Women\'s Care', image: 'https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?w=400&h=400&fit=crop', tab: 'wellness', slug: 'womens-care' },
-
-    // Health Concerns
-    { id: 'allergy-care', title: 'Allergy Care', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop', tab: 'health', slug: 'allergy-care' },
-    { id: 'bone-joint', title: 'Bone & Joint', image: 'https://images.unsplash.com/photo-1540344448520-21396a5d44d4?w=400&h=400&fit=crop', tab: 'health', slug: 'bone-joint' },
-    { id: 'diabetic-care', title: 'Diabetic Care', image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=400&fit=crop', tab: 'health', slug: 'diabetic-care' },
-    { id: 'eye-care', title: 'Eye Care', image: 'https://images.unsplash.com/photo-1522337360788-8b13df772ec2?w=400&h=400&fit=crop', tab: 'health', slug: 'eye-care' },
-    { id: 'gut-care', title: 'Gut Care', image: 'https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=400&h=400&fit=crop', tab: 'health', slug: 'gut-care' },
-    { id: 'heart-care', title: 'Heart Care', image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=400&fit=crop', tab: 'health', slug: 'heart-care' },
 
     // Prescription Medicines
-    { id: 'antibiotics', title: 'Antibiotics', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop', tab: 'prescription', slug: 'antibiotics' },
-    { id: 'cardiovascular', title: 'Cardiovascular', image: 'https://images.unsplash.com/photo-1550573105-4584e7777840?w=400&h=400&fit=crop', tab: 'prescription', slug: 'cardiovascular' },
-    { id: 'dermatology', title: 'Dermatology', image: 'https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?w=400&h=400&fit=crop', tab: 'prescription', slug: 'dermatology' },
-    { id: 'pain-relief', title: 'Pain Relief', image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=400&fit=crop', tab: 'prescription', slug: 'pain-relief' },
+    { id: 'cardiovascular', title: 'Cardiovascular', image: '/ourproduct/4.png', tab: 'prescription', slug: 'cardiovascular-prescription' },
+    { id: 'anti-infectives', title: 'Anti-Infectives', image: '/ourproduct/3.png', tab: 'prescription', slug: 'anti-infectives-prescription' },
+    { id: 'oncology', title: 'Oncology', image: '/ourproduct/6.png', tab: 'prescription', slug: 'oncology-prescription' },
+    { id: 'ENT', title: 'ENT', image: '/ourproduct/5.png', tab: 'prescription', slug: 'ENT-prescription' },
+    { id: 'haematology', title: 'Haematology', image: '/ourproduct/8.png', tab: 'prescription', slug: 'haematology-prescription' },
+    { id: 'local-anesthetics', title: 'Local Anesthetics', image: '/ourproduct/23.png', tab: 'prescription', slug: 'local-anesthetics-prescription' },
+    { id: 'dermatology', title: 'Dermatology', image: '/ourproduct/33.png', tab: 'prescription', slug: 'dermatology-prescription' },
+    { id: 'endocrinology', title: 'Endocrinology', image: '/ourproduct/22.png', tab: 'prescription', slug: 'endocrinology-prescription' },
+    { id: 'analgesic', title: 'Analgesic', image: '/ourproduct/11.png', tab: 'prescription', slug: 'analgesic-prescription' },
+    { id: 'hepatology', title: 'Hepatology', image: '/ourproduct/12.png', tab: 'prescription', slug: 'hepatology-prescription' },
+    { id: 'nephrology', title: 'Nephrology', image: '/ourproduct/34.png', tab: 'prescription', slug: 'nephrology-prescription' },
+    { id: 'gi', title: 'GI', image: '/ourproduct/20.png', tab: 'prescription', slug: 'gi-prescription' },
+    { id: 'urology', title: 'Urology', image: '/ourproduct/35.png', tab: 'prescription', slug: 'urology-prescription' },
+    { id: 'oral-care', title: 'Oral Care', image: '/ourproduct/13.png', tab: 'prescription', slug: 'oral-care-prescription' },
+    { id: 'biosimilar', title: 'Biosimilar', image: '/ourproduct/26.png', tab: 'prescription', slug: 'biosimilar-prescription' },
+    { id: 'neurology', title: 'Neurology', image: '/ourproduct/24.png', tab: 'prescription', slug: 'neurology-prescription' },
+
+
+    //wellness and nutrition
+    { id: 'kids-care-wellness', title: 'Kids Care', image: '/ourproduct/1.png', tab: 'wellness', slug: 'kids-care-wellness' },
+    { id: 'general-wellbeing-wellness', title: 'General Wellbeing', image: '/ourproduct/2.png', tab: 'wellness', slug: 'general-wellbeing-wellness' },
+    { id: 'women-wellness', title: 'Women', image: '/ourproduct/7.png', tab: 'wellness', slug: 'women-wellness' },
+    { id: 'diabetic-care-wellness', title: 'Diabetic Care', image: '/ourproduct/14.png', tab: 'wellness', slug: 'diabetic-care-wellness' },
+    { id: 'eye-care-wellness', title: 'Eye Care', image: '/ourproduct/17.png', tab: 'wellness', slug: 'eye-care-wellness' },
+    { id: 'neuro-wellness', title: 'Neuro', image: '/ourproduct/24.png', tab: 'wellness', slug: 'neuro-wellness' },
+    { id: 'bone-health-wellness', title: 'Bone Health', image: '/ourproduct/25.png', tab: 'wellness', slug: 'bone-health-wellness' },
+
+
+    // Health Concerns
+    { id: 'general-wellbeing-health', title: 'General Wellbeing', image: '/ourproduct/2.png', tab: 'health', slug: 'general-wellbeing-health' },
+    { id: 'child-health', title: 'Child', image: '/ourproduct/10.png', tab: 'health', slug: 'child-health' },
+    { id: 'women-health', title: 'Women', image: '/ourproduct/7.png', tab: 'health', slug: 'women-health' },
+
+
+    // Medical Devices
+    { id: 'medical-devices', title: 'Medical Devices', image: '/ourproduct/27.png', tab: 'medical', slug: 'medical-devices' },
+
+
+    // Vet Care
+    { id: 'nutrition-vetcare', title: 'Nutrition', image: '/ourproduct/15.png', tab: 'vetcare', slug: 'nutrition-vetcare' },
+    { id: 'food-vetcare', title: 'Food', image: '/ourproduct/18.png', tab: 'vetcare', slug: 'food-vetcare' },
 ];
 
 const tabs = [
-    { id: 'wellness', label: 'Personal Care' },
-    { id: 'health', label: 'Health Concerns' },
     { id: 'prescription', label: 'Prescription Medicines' },
+    { id: 'wellness', label: 'Wellness & Nutrition' },
+    { id: 'health', label: 'Health Concerns' },
+    { id: 'medical', label: 'Medical Devices' },
+    { id: 'vetcare', label: 'Vet Care' },
 ];
 
 export default function ExploreProducts() {
-    const [activeTab, setActiveTab] = useState('wellness');
+    const [activeTab, setActiveTab] = useState('prescription');
 
     const filteredCategories = categories.filter(cat => cat.tab === activeTab);
 
@@ -46,8 +66,8 @@ export default function ExploreProducts() {
         <section className="py-20 bg-white">
             <div className="container mx-auto">
                 {/* Heading Section */}
-                <div className="text-center mb-12">
-                    <h2 className="text-[3.5rem] font-bold text-gray-500 hover:text-[#ea9237] leading-tight mb-4">
+                <div className="text-center mb-12 mt-10 2xl:mt-20">
+                    <h2 className="text-[3.5rem] font-bold text-gray-500 hover:text-[#fae57f] leading-tight mb-4">
                         Quality Healthcare Products For Every Need
                     </h2>
                     <p className="max-w-7xl mx-auto text-gray-500 text-lg leading-relaxed">
@@ -57,15 +77,15 @@ export default function ExploreProducts() {
                 </div>
 
                 {/* Tab Navigation */}
-                <div className="flex justify-center mb-16">
-                    <div className="inline-flex bg-gray-100 rounded-full p-1 border border-gray-200">
+                <div className="flex justify-center mb-16 ">
+                    <div className="inline-flex gap-2 bg-[#fae57f] rounded-full p-1 ">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`px-8 py-3 rounded-full text-lg font-medium transition-all duration-300 ${activeTab === tab.id
-                                    ? 'bg-white text-[#ea9237] shadow-md border border-[#ea9237]/10'
-                                    : 'text-gray-600 hover:bg-white/50 hover:text-[#ea9237]'
+                                className={`px-10 py-3 rounded-full text-lg font-medium transition-all duration-300 ${activeTab === tab.id
+                                    ? 'bg-white text-gray-700 shadow-md'
+                                    : 'text-gray-600 hover:bg-white hover:text-gray-600'
                                     }`}
                             >
                                 {tab.label}
@@ -79,25 +99,23 @@ export default function ExploreProducts() {
                     {filteredCategories.length > 0 ? (
                         filteredCategories.map((category) => (
                             <Link
-                                href={`/products/${category.slug}`}
+                                href={`/ourproduct/${category.slug}`}
                                 key={category.id}
                                 className="flex flex-col items-center group cursor-pointer"
                             >
                                 <div className="relative w-32 h-32 mb-4 transition-transform duration-300 group-hover:scale-110">
-                                    {/* Decorative Background Blob - Updated to Yellow/Orange */}
                                     <div className="absolute inset-0 bg-[#fae57f]/30 rounded-full blur-xl scale-0 group-hover:scale-100 transition-transform duration-500 opacity-60"></div>
 
-                                    {/* Image Container - Updated border on hover */}
-                                    <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-transparent group-hover:border-[#ea9237]/20 shadow-sm transition-all duration-300">
-                                        <Image
+                                    <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-transparent group-hover:border-[#fae57f]/20 transition-all duration-300">
+                                        <img
                                             src={category.image}
                                             alt={category.title}
-                                            fill
+                                            fill="true"
                                             className="object-cover"
                                         />
                                     </div>
                                 </div>
-                                <h3 className="text-center font-bold text-[#1e293b] text-lg group-hover:text-[#ea9237] transition-colors duration-300">
+                                <h3 className="text-center font-bold text-[#1e293b] text-lg group-hover:text-[#fae57f] transition-colors duration-300">
                                     {category.title}
                                 </h3>
                             </Link>

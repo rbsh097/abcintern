@@ -15,7 +15,7 @@ export default function Header() {
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "Services", href: "/service" },
-        { name: "Our Products", href: "/products" },
+        { name: "Our Products", href: "/ourproduct" },
         { name: "Our People", href: "/ourpeople" },
     ];
 
@@ -40,8 +40,8 @@ export default function Header() {
                             key={link.name}
                             href={link.href}
                             className={`${isActive(link.href)
-                                    ? "text-[#ea9237]"
-                                    : "text-gray-600 hover:text-gray-900"
+                                ? "text-[#ea9237]"
+                                : "text-gray-600 hover:text-gray-900"
                                 } font-medium text-lg transition-colors`}
                         >
                             {link.name}
@@ -79,8 +79,8 @@ export default function Header() {
                                 href={link.href}
                                 onClick={() => setMenuOpen(false)}
                                 className={`${isActive(link.href)
-                                        ? "text-[#ea9237]"
-                                        : "text-gray-700"
+                                    ? "text-[#ea9237]"
+                                    : "text-gray-700"
                                     } text-lg font-medium`}
                             >
                                 {link.name}

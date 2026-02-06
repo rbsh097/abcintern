@@ -1,30 +1,1150 @@
 {
-    "personal-care": [
+    "cardiovascular-prescription": [
+        {
+            "id": "cardiovascular",
+            "title": "ABC Apixaban",
+            "description": "Apixaban 2.5/5 mg tablets",
+            "image": "/cardiovascular/abcapixabanpack.png",
+            "image2": "/cardiovascular/abcapixaban.png"
+        },
+        {
+            "id": "cardiovascular",
+            "title": "Atorsun",
+            "description": "Atorvastatin 10 mg tablets",
+            "image": "/cardiovascular/atorsunpack.png",
+            "image2": "/cardiovascular/atorsun.png"
+        },
+        {
+            "id": "cardiovascular",
+            "title": "Aurora",
+            "description": "Rosuvastatin 5/10 mg tablets",
+            "image": "/cardiovascular/aurorapack.png",
+            "image2": "/cardiovascular/aurora.png"
+        },
+        {
+            "id": "cardiovascular",
+            "title": "Carveda",
+            "description": "Carvedilol 6.25 mg tablets",
+            "image": "/cardiovascular/carvedapack.png",
+            "image2": "/cardiovascular/carveda.png"
+        },
+        {
+            "id": "cardiovascular",
+            "title": "Nicoril",
+            "description": "Nicorandil 10 mg tablets",
+            "image": "/cardiovascular/nicorilpack.png",
+            "image2": "/cardiovascular/nicoril.png"
+        },
+        {
+            "id": "cardiovascular",
+            "title": "Xavor 50",
+            "description": "losartan potassium 50 mg tablets",
+            "image": "/cardiovascular/xavorpack.png",
+            "image2": "/cardiovascular/xavor.png"
+        },
+        {
+            "id": "cardiovascular",
+            "title": "Xavor DIU",
+            "description": "losartan potassium 50 mg tablet + hydrochlorothiazide 12.5 mg tablets",
+            "image": "/cardiovascular/xavordiu.png",
+            "image2": "/cardiovascular/xavordiupack.png"
+        }
+    ],
+    "anti-infectives-prescription": [
+        {
+            "id": "anti-infectives",
+            "title": "Acylex",
+            "description": "Aciclovir Tablets 200/400mg",
+            "image": "/anti-infectives/acylexpack.png",
+            "image2": "/anti-infectives/acylex.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Azeath",
+            "description": "Azithromycin Tablets 250/500mg",
+            "image": "/anti-infectives/azeathpack.png",
+            "image2": "/anti-infectives/azeath.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Azic Oral Suspension",
+            "description": "Azithromycin 200mg/5ml",
+            "image": "/anti-infectives/azicpack.png",
+            "image2": "/anti-infectives/azic.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Azic",
+            "description": "Azithromycin Tablets USP 250/500mg",
+            "image": "/anti-infectives/azic250pack.png",
+            "image2": "/anti-infectives/azic250.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Clanoxy",
+            "description": "Amoxicillin and Clavulanate Potassium Tablets 375/625mg",
+            "image": "/anti-infectives/clanoxy.png",
+            "image2": "/anti-infectives/clanoxypack.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Clarion",
+            "description": "Clarithromycin Tablets 250/500mg",
+            "image": "/anti-infectives/clarionpack.png",
+            "image2": "/anti-infectives/clarion.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Clobmarksans",
+            "description": "Clobetasol Propionate 0.05% w/w Cream",
+            "image": "/anti-infectives/clobmarksanspack.png",
+            "image2": "/anti-infectives/clobmarksans.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Clobetamark",
+            "description": "Clotrimazole 1.0% , Betamethasone Dipropionate 0.05% & Gentamicin 0.1% Cream",
+            "image": "/anti-infectives/clobetamarkpack.png",
+            "image2": "/anti-infectives/clobetamark.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Eleva Plus",
+            "description": "Cefoperazone + Sulbactam U.S.P. 1/2 gm",
+            "image": "/anti-infectives/elevapack.png",
+            "image2": "/anti-infectives/eleva.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Flucillin",
+            "description": "Flucloxacillin Capsules BP 250/500mg",
+            "image": "/anti-infectives/flucillinpack.png",
+            "image2": "/anti-infectives/flucillin.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Icon",
+            "description": "Itraconazole 100mg",
+            "image": "/new/17.jpeg",
+            "image2": "/anti-infectives/icon.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "IZOL 100",
+            "description": "Itraconazole Capsules 100mg",
+            "image": "/anti-infectives/izolpack.png",
+            "image2": "/new/20.jpeg"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "IZOL 200",
+            "description": "Itraconazole Capsules 200mg",
+            "image": "/new/22.jpeg",
+            "image2": "/new/22.jpeg"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Levcian",
+            "description": "Levofloxacin Tablets USP 500mg",
+            "image": "/anti-infectives/levcian.png",
+            "image2": "/anti-infectives/levcianpack.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Levo",
+            "description": "Levofloxacin 250/500mg",
+            "image": "/anti-infectives/levopack.png",
+            "image2": "/anti-infectives/levo.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Luzo",
+            "description": "Luliconazole Cream 1% w/w 10gm",
+            "image": "/anti-infectives/luzopack.png",
+            "image2": "/anti-infectives/luzo.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Molena",
+            "description": "Moxifloxacin Tablets 400mg",
+            "image": "/anti-infectives/molena.png",
+            "image2": "/anti-infectives/molenapack.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Markvir",
+            "description": "Aciclovir Cream BP 5% w/w",
+            "image": "/anti-infectives/markvir.png",
+            "image2": "/anti-infectives/markvirpack.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Qink",
+            "description": "Cefpodoxime 100mg",
+            "image": "/anti-infectives/qinkpack.png",
+            "image2": "/anti-infectives/qink.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Quench cream",
+            "description": "Silver Sulfadiazine 1% w/w 15gm",
+            "image": "/anti-infectives/quenchpack.png",
+            "image2": "/anti-infectives/quench.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Roxitem 150",
+            "description": "Roxithromycin 150mg Tablets",
+            "image": "/anti-infectives/roxitempack.png",
+            "image2": "/anti-infectives/roxitem.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Samaxon",
+            "description": "Ceftriaxone for Injection USP 1gm",
+            "image": "/anti-infectives/samaxonpack.png",
+            "image2": "/anti-infectives/samaxon.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Samsaf",
+            "description": "Cefuroxime Sodium USP 750 mg Inj",
+            "image": "/anti-infectives/samsafpack.png",
+            "image2": "/anti-infectives/samsaf.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Sezo-B Cream",
+            "description": "Sertaconazole Nitrate and Beclomethasone cream",
+            "image": "/anti-infectives/sezopack.png",
+            "image2": "/anti-infectives/sezo.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Theoflex-125 mg",
+            "description": "Oral Suspension BP 125mg",
+            "image": "/anti-infectives/theoflexpack.png",
+            "image2": "/anti-infectives/theoflex.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Theomycin 250 mg",
+            "description": "Erythromycin Tablets USP 250mg",
+            "image": "/anti-infectives/theomycinpack.png",
+            "image2": "/anti-infectives/theomycin.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Theozee 250 mg",
+            "description": "Azithromycin Tablets USP 250mg",
+            "image": "/anti-infectives/theozee250pack.png",
+            "image2": "/anti-infectives/theozee250.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Theozee 500 mg",
+            "description": "Azithromycin Tablets USP 500mg",
+            "image": "/anti-infectives/theozeepack.png",
+            "image2": "/anti-infectives/theozee.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Trifamox IBL",
+            "description": "Amoxicillin + Sulbactam",
+            "image": "/anti-infectives/trifamoxpack.png",
+            "image2": "/anti-infectives/trifamox.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Virq 250 mg Inj",
+            "description": "Acyclovir Sodium (M.S.)",
+            "image": "/anti-infectives/virqpack.png",
+            "image2": "/anti-infectives/virq.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Vorif",
+            "description": "Voriconazole 200mg",
+            "image": "/anti-infectives/vorifpack.png",
+            "image2": "/anti-infectives/vorif.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Zeekan Susp",
+            "description": "Azithromycin (as Dihydrate) U.S.P",
+            "image": "/anti-infectives/zeekanpack.png",
+            "image2": "/anti-infectives/zeekan.png"
+        },
+        {
+            "id": "anti-infectives",
+            "title": "Zeftahl",
+            "description": "Ceftazidime For Injection USP 1gm",
+            "image": "/anti-infectives/zeftahlpack.png",
+            "image2": "/anti-infectives/zeftahl.png"
+        }
+    ],
+    "oncology-prescription": [
         {
             "id": "immuplex",
-            "title": "IMMUPLEX",
-            "description": "Ideal health drink to stay healthy & active",
-            "image": "https://images.unsplash.com/photo-1550573105-4584e7777840?w=400&h=400&fit=crop"
+            "title": "Anastronat Tab",
+            "description": "Anastrozole Tablets 1mg",
+            "image": "/oncology/Anastronat1.png",
+            "image2": "/oncology/Anastronat.png"
         },
         {
             "id": "rekover",
-            "title": "REKOVER",
-            "description": "Boost immunity and maintain your overall health",
-            "image": "https://images.unsplash.com/photo-1540344448520-21396a5d44d4?w=400&h=400&fit=crop"
+            "title": "Bagocap",
+            "description": "Capecitabine 500mg Tablets",
+            "image": "/new/31.jpeg",
+            "image2": "/new/30.jpeg"
         },
         {
             "id": "glucomeal-vanilla",
-            "title": "GLUCOMEAL VANILLA",
-            "description": "An easy and effective meal and snack solution for diabetics.",
-            "image": "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?w=400&h=400&fit=crop"
-        }
-    ],
-    "medical-nutrition": [
+            "title": "Benzimir",
+            "description": "Bendamustine 25/100 mg",
+            "image": "/oncology/BenzimirPack.png",
+            "image2": "/oncology/Benzimir.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Bevaas",
+            "description": "Bevacizumab 100/400 mg Inj",
+            "image": "/oncology/BevaasPack.png",
+            "image2": "/oncology/Bevaas.png"
+        },
         {
             "id": "immuplex",
-            "title": "IMMUPLEX",
-            "description": "Ideal health drink to stay healthy & active",
-            "image": "https://images.unsplash.com/photo-1550573105-4584e7777840?w=400&h=400&fit=crop"
+            "title": "Carbomark ",
+            "description": "Carboplatin Inj BP 150/450 mg",
+            "image": "/oncology/carbomarkPack.png",
+            "image2": "/oncology/carbomark.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "CYCLOPHOS-MED 200",
+            "description": "Cyclophosphamide for Injection BP 200 mg/vial",
+            "image": "/oncology/Cyclophos-MedPack.png",
+            "image2": "/oncology/Cyclophos-Med200.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "CYCLOPHOS-MED 500",
+            "description": "Cyclophosphamide for Injection BP 500 mg/vial",
+            "image": "/oncology/Cyclophos-MedPack.png",
+            "image2": "/oncology/Cyclophos-Med500.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Donataxel",
+            "description": "Docetaxel Infusion Solutions 20/80 mg",
+            "image": "/oncology/DonataxelPack.png",
+            "image2": "/oncology/Donataxel.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Gembio",
+            "description": "Gemcitabine Inj 200mg/1gm",
+            "image": "/oncology/GembioPack.png",
+            "image2": "/oncology/Gembio.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Gemcel",
+            "description": "Gemcitabine Inj 200/1000 mg",
+            "image": "/oncology/GemcelPack.png",
+            "image2": "/oncology/Gemcel.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Idelara",
+            "description": "Letrozole 2.5 mg Tablets",
+            "image": "/oncology/IdelaraPack.png",
+            "image2": "/oncology/Idelara.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Oncofusion IV Infusion Set",
+            "description": "An easy and effective meal and snack solution for diabetics.",
+            "image": "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?w=400&h=400&fit=crop",
+            "image2": "/d2.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Oxamark",
+            "description": "Oxaliplatin 50/100 mg Inj",
+            "image": "/oncology/OxmarkPack.png",
+            "image2": "/oncology/Oxmark.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Paclimark",
+            "description": "Paclitaxel Inj USP 30/100/260 mg",
+            "image": "/oncology/PaclimarkPack.png",
+            "image2": "/oncology/Paclimark.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Panataxel",
+            "description": "Paclitaxel Inj 30/100 mg",
+            "image": "/oncology/PanataxelPack.png",
+            "image2": "/oncology/Panataxel.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Photofusion IV Infusion Set",
+            "description": "Boost immunity and maintain your overall health",
+            "image": "https://images.unsplash.com/photo-1540344448520-21396a5d44d4?w=400&h=400&fit=crop",
+            "image2": "/d2.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Sukuba",
+            "description": "Pemetrexed 500mg",
+            "image": "/oncology/SukubaPack.png",
+            "image2": "/oncology/Sukuba.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Tamoxis",
+            "description": "Tamoxifen 20mg tablets",
+            "image": "/oncology/Tamoxis1.png",
+            "image2": "/oncology/Tamoxis.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Tzmide",
+            "description": "Temozolomide Capsules 20/100 mg",
+            "image": "/oncology/TZ-MidePack.png",
+            "image2": "/oncology/TZ-Mide.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Xpreza 100",
+            "description": "Azacitidine for Injection",
+            "image": "/new/32.jpeg",
+            "image2": "/new/33.jpeg"
+        }
+    ],
+    "ENT-prescription": [
+        {
+            "id": "immuplex",
+            "title": "Azeflumark",
+            "description": "Azelastine hyrdchloride Fluticasone Propionate Nasal Spray",
+            "image": "/ent/AzeflumarkPack.png",
+            "image2": "/ent/Azeflumark.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Ltriz",
+            "description": "Levocetirizine 5mg Orally Disintegrating Strips",
+            "image": "/ent/LtrizPack.png",
+            "image2": "/ent/Ltriz.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "LTRIZ M",
+            "description": "Montelukast 10mg & Levocetirizine Dihudrochloride 5mg Tablets",
+            "image": "/ent/LtrizMCapPack.png",
+            "image2": "/ent/LtrizMCap.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Metomark",
+            "description": "Mometasone Aqueous Nasal Spray BP",
+            "image": "/ent/MetomarkPack.png",
+            "image2": "/ent/Metomark.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Unocez for Children",
+            "description": "Cetrizine Hydrochloride Oral Solution BP",
+            "image": "/ent/UnocezPack.png",
+            "image2": "/ent/Unocez.png"
+        }
+    ],
+    "haematology-prescription": [
+        {
+            "id": "immuplex",
+            "title": "ASPARAG-MED",
+            "description": "L-Asparaginase for Injection 5000 IU/vial",
+            "image": "/Haematology/Asparag-MedPack.png",
+            "image2": "/Haematology/Asparag-Med.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Bortemark",
+            "description": "Bortezomib for Injection 2mg/3.5mg",
+            "image": "/Haematology/BortemarkPack.png",
+            "image2": "/Haematology/Bortemark.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Doxomark",
+            "description": "Doxorubicin Hydrochloride 10/50 mg Inj",
+            "image": "/Haematology/DoxomarkPack.png",
+            "image2": "/Haematology/Doxomark.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Doxtie",
+            "description": "Doxorubicin Hydrochloride 50 mg Lyophilized Powder for Inj",
+            "image": "/Haematology/DoxtiePack.png",
+            "image2": "/Haematology/Doxtie.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Filgen",
+            "description": "Filgrastim 300 mcg Inj",
+            "image": "/Haematology/FilgenPack.png",
+            "image2": "/Haematology/Filgen.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Lenalid",
+            "description": "Lenalidomide 5/10 Cap",
+            "image": "/Haematology/LenalidPack.png",
+            "image2": "/Haematology/Lenalid.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Maturus",
+            "description": "Azacitidine Lyophilized Powder for Injection",
+            "image": "/Haematology/Maturus.png",
+            "image2": "/Haematology/MaturusPack.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Rilast",
+            "description": "Rituximab 100/500 mg Inj",
+            "image": "/Haematology/RilastPack.png",
+            "image2": "/Haematology/Rilast.png"
+        }
+    ],
+    "local-anesthetics-prescription": [
+        {
+            "id": "immuplex",
+            "title": "Bupiright S",
+            "description": "Bupivacaine Hydrochloride in Dextrose Injection USP",
+            "image": "/LocalAnesthetics/BupirightPack.png",
+            "image2": "/LocalAnesthetics/Bupiright.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Lidomark",
+            "description": "Lidocaine Gel BP",
+            "image": "/LocalAnesthetics/LidomarkPack.png",
+            "image2": "/LocalAnesthetics/Lidomark.png"
+        }
+    ],
+    "dermatology-prescription": [
+        {
+            "id": "Calovera Lotion",
+            "title": "Calovera",
+            "description": "Calamine Therapy Lotion 100ml",
+            "image": "/Dermatology/CaloveraPack.png",
+            "image2": "/Dermatology/Calovera.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Grohair",
+            "description": "Minoxidil Topical Solution USP 5%",
+            "image": "/Dermatology/Gro-HairPack.png",
+            "image2": "/Dermatology/Gro-Hair.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Moist Boost",
+            "description": "Intensive Moisturizing Cream",
+            "image": "/Dermatology/MoistBoostPack.png",
+            "image2": "/Dermatology/MoistBoost.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Sun Lite",
+            "description": "Moisturizing UV Protect Sunscream",
+            "image": "/Dermatology/SunLitePack.png",
+            "image2": "/Dermatology/SunLite.png"
+        }
+    ],
+    "endocrinology-prescription": [
+        {
+            "id": "immuplex",
+            "title": "Carbima",
+            "description": "Carbimazole BP 5/10 mg Tab",
+            "image": "/Endocrinology/CarbimaPack.png",
+            "image2": "/Endocrinology/Carbima.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Glemaz",
+            "description": "Glimepiride 1/2/3/4 mg Tab",
+            "image": "/Endocrinology/GlemazPack.png",
+            "image2": "/Endocrinology/Glemaz.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Sitafer",
+            "description": "Sitagliptin 50/100 mg Tab",
+            "image": "/Endocrinology/SitaferPack.png",
+            "image2": "/Endocrinology/Sitafer.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "T4 Montpellier",
+            "description": "Levothyroxine Sodium 25/50/75/100 mcg Tab",
+            "image": "/Endocrinology/T4Pack.png",
+            "image2": "/Endocrinology/T4New.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Thyro-Med",
+            "description": "Levothyroxine Sodium 50/100 mcg Tab",
+            "image": "/Endocrinology/Thyro-MedPack.png",
+            "image2": "/Endocrinology/Thyro-Med.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Valiant",
+            "description": "Vildagliptin",
+            "image": "/Endocrinology/ValiantPack.png",
+            "image2": "/Endocrinology/Valiant.png"
+        }
+    ],
+    "analgesic-prescription": [
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Celekop",
+            "description": "Celecoxib 100/200 mg Tab",
+            "image": "/Analgesic/CelekopPack.png",
+            "image2": "/Analgesic/Celekop.png"
+        },
+        {
+            "id": "glucomeal-vanilla",
+            "title": "Theofenac",
+            "description": "Aceclofence 50/100 mg Tab",
+            "image": "/Analgesic/TheofenacPack.png",
+            "image2": "/Analgesic/Theofenac.png"
+        }
+    ],
+    "hepatology-prescription": [
+        {
+            "id": "immuplex",
+            "title": "Centaurus",
+            "description": "Entecavir",
+            "image": "/Hepatology/CentaurusPack.png",
+            "image2": "/Hepatology/Centaurus.png"
+        },
+        {
+            "id": "rekover",
+            "title": "ABC Tenofovir",
+            "description": "Tenofovir Disoproxil Fumarate Tablets 300mg",
+            "image": "/Hepatology/TenofovirPack.png",
+            "image2": "/Hepatology/Tenofovir.png"
+        }
+    ],
+    "nephrology-prescription": [
+        {
+            "id": "immuplex",
+            "title": "Derise",
+            "description": "Darbepoetin Alfa 25 mcg & 40 mcg PFS",
+            "image": "/Nephrology/DerisePack.png",
+            "image2": "/Nephrology/Derise.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Eritrogen",
+            "description": "r-Hu-alpha Eritropoietin 2000/4000 IU Inj",
+            "image": "/Nephrology/EritrogenPack.png",
+            "image2": "/Nephrology/Eritrogen.png"
+        }
+    ],
+    "gi-prescription": [
+        {
+            "id": "immuplex",
+            "title": "Dynetic",
+            "description": "Itopride 50mg",
+            "image": "/GI/DyneticPack.png",
+            "image2": "/GI/Dynetic.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Esomega",
+            "description": "Esomeprazole Capsules 20 mg / 40 mg",
+            "image": "/GI/EsomegaPack.png",
+            "image2": "/GI/Esomega.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Ezylaz Sachet 6 gm",
+            "description": "Ispaghula Husk Natural Fibre Supplement",
+            "image": "/GI/EzylaxPack.png",
+            "image2": "/GI/Ezylax.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Ezopep 20/40 mg Tab",
+            "description": "Espmeprazole Gastro-Resistant Tablets",
+            "image": "/GI/EzopepPack.png",
+            "image2": "/GI/Ezopep.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Esoright",
+            "description": "Esomeprazole for Injection 40mg",
+            "image": "/GI/EsorightPack.png",
+            "image2": "/GI/Esoright.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Fortigermina",
+            "description": "Bacillus Clausii Spores Suspension 2 billion / 5ml",
+            "image": "/GI/FortigerminaPack.png",
+            "image2": "/GI/Fortigermina.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Ifaxa",
+            "description": "Rifaximin Tablets 200/550mg",
+            "image": "/GI/IfaxaPack.png",
+            "image2": "/GI/Ifaxa.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Novapressin",
+            "description": "Terlipressin acetate 1mg/5ml",
+            "image": "/GI/NovapressinPack.png",
+            "image2": "/GI/Novapressin.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Ondan MDS 4/8 mg",
+            "description": "Ondansetron 4/8 mg Orally Disintegrating Strips",
+            "image": "/GI/OndanMDSPack.png",
+            "image2": "/GI/OndanMDS.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Rabgen",
+            "description": "Rabeprazole 20mg Powder for Injection",
+            "image": "/GI/RabgenPack.png",
+            "image2": "/GI/Rabgen.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Theorapraz Plus",
+            "description": "Omeprazole 20mg & Domperidone 10mg Capsules",
+            "image": "/GI/TheoprazPlusPack.png",
+            "image2": "/GI/TheoprazPlus.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Vomisun 10 mg Tab",
+            "description": "Domperidone Tablets BP",
+            "image": "/GI/VomisunPack.png",
+            "image2": "/GI/Vomisun.png"
+        }
+    ],
+    "urology-prescription": [
+        {
+            "id": "immuplex",
+            "title": "F 5",
+            "description": "Finasteride BP 5 mg Tablets",
+            "image": "/urology/F5Pack.png",
+            "image2": "/urology/F5.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Flosure (2x10's) Capsule",
+            "description": "Tamsulosin Hydrocholride",
+            "image": "/urology/FlosurePack.png",
+            "image2": "/urology/Flosure.png"
+        }
+    ],
+    "oral-care-prescription": [
+        {
+            "id": "rekover",
+            "title": "Fluritop Mouthwash",
+            "description": "Anti-Cavity Fluoride Mouthwash",
+            "image": "/oralCare/FluoritopPack.png",
+            "image2": "/oralCare/Fluoritop.png"
+        }
+    ],
+    "biosimilar-prescription": [
+        {
+            "id": "rekover",
+            "title": "Tocilizumab",
+            "description": "Concentrate for Solution for infusion , For Intravenous Use Only",
+            "image": "/Biosimilar/TocilizumabPack.png",
+            "image2": "/Biosimilar/Tocilizumab.png"
+        }
+    ],
+    "neurology-prescription": [
+        {
+            "id": "rekover",
+            "title": "VALPROMEGH 200 (Oral Solution)",
+            "description": "Sodium Valproate Oral Solution",
+            "image": "/Neurology/ValpromeghPack.png",
+            "image2": "/Neurology/Valpromegh.png"
+        }
+    ],
+    "kids-care-wellness": [
+        {
+            "id": "immuplex",
+            "title": "A2Z Drop 30 ml",
+            "description": "Multivitamin , Antioxidant & Minerals Drops",
+            "image": "/kidsCare/A2ZDropPack.png",
+            "image2": "/kidsCare/A2ZDrop.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "A2Z Syrup 200 ml",
+            "description": "Multivitamin , Antioxidant & Minerals Syrup",
+            "image": "/kidsCare/A2ZSyrupPack.png",
+            "image2": "/kidsCare/A2ZSyrup.png"
+        }
+    ],
+    "general-wellbeing-wellness": [
+        {
+            "id": "immuplex",
+            "title": "A2Z soft gel Cap",
+            "description": "Multivitamin , Antioxidant & Minerals Soft Gelatin Capsules",
+            "image": "/GeneralWellbeing/A2ZCapsulesPack.png",
+            "image2": "/GeneralWellbeing/A2ZCapsules.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Antoxid Cap",
+            "description": "Betacarotene, Zinc Sulfate Monohydrate , Selenium , Manganese, Copper, Vitamin C & Vitamin E Soft Gelatin Capsule",
+            "image": "/GeneralWellbeing/AntoxidPack.png",
+            "image2": "/GeneralWellbeing/Antoxid.png"
+        }
+    ],
+    "women-wellness": [
+        {
+            "id": "immuplex",
+            "title": "Bio E Soft gel Cap",
+            "description": "Tocotrienol Soft Gelatin Capsules",
+            "image": "/WomensCare/BioEPack.png",
+            "image2": "/WomensCare/BioE.png"
+        }
+    ],
+    "diabetic-care-wellness": [
+        {
+            "id": "immuplex",
+            "title": "DiaVit",
+            "description": "Multivitamin & Multimineral Soft Gelatin Capsules",
+            "image": "/DiabeticCare/DiaVitPack.png",
+            "image2": "/DiabeticCare/DiaVit.png"
+        }
+    ],
+    "eye-care-wellness": [
+        {
+            "id": "immuplex",
+            "title": "I-Vit soft gel Cap",
+            "description": "Lutein, Zeaxanthin , Vitamin C, Vitamin E, Zinc , Copper, Selenium & Manganese Soft Gelatin Capsules",
+            "image": "/EyeCare/IVitPack.png",
+            "image2": "/EyeCare/IVit.png"
+        }
+    ],
+    "neuro-wellness": [
+        {
+            "id": "immuplex",
+            "title": "Mcobalmin ODS",
+            "description": "Methycobalamin 1500 mcg Orally Disintegrating Strips",
+            "image": "/NeuroCare/McobalminODSPack.png",
+            "image2": "/NeuroCare/McobalminODS.png"
+        }
+    ],
+    "bone-health-wellness": [
+        {
+            "id": "immuplex",
+            "title": "Tendocian Tabp",
+            "description": "Collagen Peptides Type 1, Sodium Hyaluronate, Chondroitim Sulphate & Vitamin C Tablets",
+            "image": "/BoneHealth/TendocianPack.png",
+            "image2": "/BoneHealth/Tendocian.png"
+        }
+    ],
+    "general-wellbeing-health": [
+        {
+            "id": "immuplex",
+            "title": "Bioskin",
+            "description": "Hand Sanitizer Gel 125 ml",
+            "image": "/GeneralWellBeingHealth/BioskinPack.png",
+            "image2": "/GeneralWellBeingHealth/Bioskin.png"
+        },
+        {
+            "id": "rekover",
+            "title": "Cal D3 Tab",
+            "description": "Calcium, Zinc , Magnesium Vitamin D3 & Vitamin K2 Tablets",
+            "image": "/GeneralWellBeingHealth/CalD3CapPack.png",
+            "image2": "/GeneralWellBeingHealth/CalD3Cap.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Clinsodent Brush",
+            "description": "Strontium Chloride Hexahydrate Toothpaste",
+            "image": "/GeneralWellBeingHealth/ClinsodentBrushPack.png",
+            "image2": "/GeneralWellBeingHealth/ClinsodentBrush.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Dermavit Tab",
+            "description": "Glowing Skin | Healthy Hair | Strong Nail",
+            "image": "/GeneralWellBeingHealth/DermavitPack.png",
+            "image2": "/GeneralWellBeingHealth/Dermavit.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Hexidine  Mouthwash 80/160 ml",
+            "description": "Chlorhexidene Gluconate Mouthwash",
+            "image": "/GeneralWellBeingHealth/HexidineMWPack.png",
+            "image2": "/GeneralWellBeingHealth/HexidineMW.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Hi-Cal Tab",
+            "description": "Calcium Supplement",
+            "image": "/GeneralWellBeingHealth/HiCalTabPack.png",
+            "image2": "/GeneralWellBeingHealth/HiCalTab.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "ORO FRESH",
+            "description": "Herbal Toothpaste",
+            "image": "/GeneralWellBeingHealth/OrofreshHerbalPackFinal.png",
+            "image2": "/GeneralWellBeingHealth/OrofreshHerbal.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Orofresh ",
+            "description": "Herbal Toothpaste 20/50/100 gm",
+            "image": "/GeneralWellBeingHealth/OrofreshHerbalToothpastePack.png",
+            "image2": "/GeneralWellBeingHealth/OrofreshHerbalToothpaste.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Orofresh Kids",
+            "description": "Kids Dental Gel 50 gm",
+            "image": "/GeneralWellbeingHealth/OrofreshKidsDentalGelPack.png",
+            "image2": "/GeneralWellbeingHealth/OrofreshKidsDentalGel.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Orofresh Mouthwash",
+            "description": "Mouthwash 100/200 ml",
+            "image": "/GeneralWellbeingHealth/OrofreshMouthFreshenerPack.png",
+            "image2": "/GeneralWellbeingHealth/OrofreshMouthFreshener.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Orofresh Sensitive",
+            "description": "Sensitive Teeth Toothpaste 20/50/200 gm",
+            "image": "/GeneralWellbeingHealth/OrofreshSensitiveTeethPack.png",
+            "image2": "/GeneralWellbeingHealth/OrofreshSensitiveTeeth.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "RA Thermoseal",
+            "description": "Rapid Action Gel 15/100 gm",
+            "image": "/GeneralWellbeingHealth/RAThermosealGelPack.png",
+            "image2": "/GeneralWellbeingHealth/RAThermosealGel.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "RA Thermoseal Paste",
+            "description": "Rapid Action toothPaste 15/50/100 gm",
+            "image": "/GeneralWellbeingHealth/RAThermosealPastePack.png",
+            "image2": "/GeneralWellbeingHealth/RAThermosealPaste.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Shine N Smile",
+            "description": "Tooth Polish 15/80g",
+            "image": "/GeneralWellbeingHealth/ShineNSmilePack.png",
+            "image2": "/GeneralWellbeingHealth/ShineNSmile.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Thermoseal",
+            "description": "Floss 50 Mtr",
+            "image": "/GeneralWellbeingHealth/ThermosealFlossPack.png",
+            "image2": "/GeneralWellbeingHealth/ThermosealFloss.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Thermoseal",
+            "description": "Ortho Brush",
+            "image": "/GeneralWellbeingHealth/ThermosealOrthoPack.png",
+            "image2": "/GeneralWellbeingHealth/ThermosealOrtho.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Thermoseal Proxa NS",
+            "description": "Interdental Brush",
+            "image": "/GeneralWellbeingHealth/ThermosealProxaNSPack.png",
+            "image2": "/GeneralWellbeingHealth/ThermosealProxaNS.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Thermoseal Repair Paste",
+            "description": "Strontium Chloride Hexahydrate Toothpaste",
+            "image": "/GeneralWellbeingHealth/ThermosealRepairPastePack.png",
+            "image2": "/GeneralWellbeingHealth/ThermosealRepairPaste.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Thermoseal",
+            "description": "Smart ToothBrush",
+            "image": "/GeneralWellbeingHealth/ThermosealSmartToothbrushPack.png",
+            "image2": "/GeneralWellbeingHealth/ThermosealSmartToothbrush.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Thermoseal",
+            "description": "ToothBrush",
+            "image": "/GeneralWellbeingHealth/ThermosealToothBrushPack.png",
+            "image2": "/GeneralWellbeingHealth/ThermosealToothBrush.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Thermoseal",
+            "description": "Ultrasoft Brush",
+            "image": "/GeneralWellbeingHealth/ThermosealUltrasoftBrushPack.png",
+            "image2": "/GeneralWellbeingHealth/ThermosealUltrasoftBrush.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Vit D3 ODS",
+            "description": "Vitamin D3 2000 IU Orally Disintegrating Strips",
+            "image": "/GeneralWellbeingHealth/VitD3ODSPack.png",
+            "image2": "/GeneralWellbeingHealth/VitD3ODS.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Vitagen",
+            "description": "Vitamin C 500mg Chewable Tablets",
+            "image": "/GeneralWellbeingHealth/VitagenVPack.png",
+            "image2": "/GeneralWellbeingHealth/VitagenV.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Vitagen",
+            "description": "Zinc Chelate 50mg Tablets",
+            "image": "/GeneralWellbeingHealth/VitagenZincPack.png",
+            "image2": "/GeneralWellbeingHealth/VitagenZinc.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Younifloss",
+            "description": "Dental Floss",
+            "image": "/GeneralWellbeingHealth/YouniflossPack.png",
+            "image2": "/GeneralWellbeingHealth/Younifloss.png"
+        }
+    ],
+    "child-health": [
+        {
+            "id": "immuplex",
+            "title": "Cal D3 Syrup",
+            "description": "Calcium , Zinc , Magnesium & Vitamin D3 Sus",
+            "image": "/ChildHealth/CalD3Pack.png",
+            "image2": "/ChildHealth/CalD3.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Hi-Cal Syrup",
+            "description": "Calcium Supplement",
+            "image": "/ChildHealth/HiCalPack.png",
+            "image2": "/ChildHealth/HiCalTab.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Kids Bunny Gel 80 gm",
+            "description": "Dental Gel for Kids",
+            "image": "/ChildHealth/KidsBunnyPack.png",
+            "image2": "/ChildHealth/KidsBunny.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Kids Bunny Gel 13 gm",
+            "description": "Dental Gel for Kids",
+            "image": "/ChildHealth/KidsBunnyGel13gmPack.png",
+            "image2": "/ChildHealth/KidsBunnyGel13gm.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Kids Dyny Brush",
+            "description": "Toothbrush for Kids",
+            "image": "/ChildHealth/KidsDynyPack.png",
+            "image2": "/ChildHealth/KidsDyny.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Vit D3 Drops 200 IU",
+            "description": "Vitamin D3 200 IU Drops",
+            "image": "/ChildHealth/VitD3Pack.png",
+            "image2": "/ChildHealth/VitD3.png"
+        }
+    ],
+    "women-health": [
+        {
+            "id": "immuplex",
+            "title": "GLA soft gel Cap",
+            "description": "Evening Primerose Oil Soft Gelatin Capsules",
+            "image": "/WomenHealth/GLAPack.png",
+            "image2": "/WomenHealth/GLA.png"
+        }
+    ],
+    "nutrition-vetcare": [
+        {
+            "id": "immuplex",
+            "title": "Drools Absolute Calcium Bone For Pets 300 gm (Dog)",
+            "description": "Calcium Supplement for Dogs",
+            "image": "/VetNutrition/DroolsAbsoluteCalciumBoneforPetPack.png",
+            "image2": "/VetNutrition/DroolsAbsoluteCalciumBoneforPet.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Drools Absolute Salmon Oil For Pets 150 ml (Dog)",
+            "description": "Salmon Oil Supplement for Dogs",
+            "image": "/VetNutrition/DroolsAbsoluteSalmonOilforPetPack.png",
+            "image2": "/VetNutrition/DroolsAbsoluteSalmonOilforPet.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Drools Real Chicken Biscuits 800 Gms",
+            "description": "Chicken Biscuits for Dogs",
+            "image": "/VetNutrition/DroolsBiscuitforDogPack.png",
+            "image2": "/VetNutrition/DroolsBiscuitforDog.png"
+        }
+    ],
+    "food-vetcare": [
+        {
+            "id": "immuplex",
+            "title": "Drools Chicken And Egg Adult/Puppy 21 Kg (Dog)",
+            "description": "Boost immunity and maintain your overall health",
+            "image": "/VetFood/DroolsChickenandEggAdultPack.png",
+            "image2": "/VetFood/DroolsChickenandEggAdult.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Daily Nutrition Chicken And Egg",
+            "description": "Daily Nutrition Chicken And Egg Adult/Puppy 400gm/1.3kg/3 kg (Dog)",
+            "image": "/VetFood/DroolsPuppyAdultNutritionPack.png",
+            "image2": "/VetFood/DroolsPuppyAdultNutrition.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Drools Complete Nutrition",
+            "description": "Ocean Fish for Kitten",
+            "image": "/VetFood/DroolsOceanFishforKittenCatPack.png",
+            "image2": "/VetFood/DroolsOceanFishforKittenCat.png"
+        },
+        {
+            "id": "immuplex",
+            "title": "Daily Nutrition Tuna Salmon for Cat",
+            "description": "Daily Nutrition Tuna Salmon for Cat 400 gm",
+            "image": "/VetFood/DroolsTunaNSalmonforCatPack.png",
+            "image2": "/VetFood/DroolsTunaNSalmonforCat.png"
         }
     ]
 }
