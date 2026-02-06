@@ -4,10 +4,10 @@ import { leadershipTeam, boardMembers, financeTeam } from "@/components/data/lea
 
 export default function OurPeoplePage() {
     return (
-        <div className="bg-[#F8F9FA] pb-20">
+        <div className="">
             <OurPeopleSection />
 
-            <div className="space-y-10">
+            <div className="bg-[#F8F9FA]">
                 <LeadershipBoard
                     title="Meet Our Leadership Board"
                     leaders={leadershipTeam}

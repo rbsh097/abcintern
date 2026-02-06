@@ -7,8 +7,8 @@ const LeadershipBoard = ({
     leaders,
 }) => {
     return (
-        <section className="py-10 bg-[#F8F9FA]">
-            <div className="container mx-auto px-4">
+        <section className="py-10 pt-40">
+            <div className="container mx-auto px-4 bg-[#F8F9FA] ">
                 <div className="text-center mb-8">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight hover:text-[#e57f00]">
                         {title}
