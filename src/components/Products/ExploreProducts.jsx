@@ -67,7 +67,7 @@ export default function ExploreProducts() {
             <div className="container mx-auto">
                 {/* Heading Section */}
                 <div className="text-center mb-12 mt-10 2xl:mt-20">
-                    <h2 className="text-[3.5rem] font-bold text-gray-500 hover:text-[#fae57f] leading-tight mb-4">
+                    <h2 className="text-[3.5rem] font-bold text-gray-500 hover:text-[#e57f00] leading-tight mb-4">
                         Quality Healthcare Products For Every Need
                     </h2>
                     <p className="max-w-7xl mx-auto text-gray-500 text-lg leading-relaxed">
@@ -115,7 +115,7 @@ export default function ExploreProducts() {
                                         />
                                     </div>
                                 </div>
-                                <h3 className="text-center font-bold text-[#1e293b] text-lg group-hover:text-[#fae57f] transition-colors duration-300">
+                                <h3 className="text-center font-bold text-[#1e293b] text-lg group-hover:text-[#e57f00] transition-colors duration-300">
                                     {category.title}
                                 </h3>
                             </Link>

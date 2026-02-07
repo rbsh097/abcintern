@@ -20,7 +20,7 @@ export default function ProductCard({ product }) {
                 </div>
             </div>
 
-            <h3 className="text-xl font-bold text-black mb-3 group-hover:text-[#fae57f] transition-colors">
+            <h3 className="text-xl font-bold text-black mb-3 group-hover:text-[#e57f00] transition-colors">
                 {product.title}
             </h3>
 

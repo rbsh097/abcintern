@@ -27,11 +27,11 @@ const ArticlesSection = () => {
     return (
         <section className="bg-white py-20">
             <div className="container mx-auto px-6">
-                <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium uppercase text-black hover:text-[#fae57f] text-center mb-16 tracking-tighter font-black">Latest <span className="text-[#fae57f]">Insights</span></h1>
+                <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium uppercase text-black hover:text-[#ea9237] text-center mb-16 tracking-tighter font-black">Latest Insights</h1>
 
                 {loading ? (
                     <div className="flex justify-center py-20">
-                        <Loader2 className="w-8 h-8 text-[#fae57f] animate-spin" />
+                        <Loader2 className="w-8 h-8 text-[#ea9237] animate-spin" />
                     </div>
                 ) : articles.length === 0 ? (
                     <div className="text-center py-10">
@@ -54,10 +54,10 @@ const ArticlesSection = () => {
                 <div className="flex justify-center mt-12">
                     <a
                         href="/articles"
-                        className="group relative inline-flex items-center gap-3 px-10 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-[#fae57f] transition-all duration-300 shadow-xl hover:shadow-[#fae57f]/20 overflow-hidden"
+                        className="group relative inline-flex items-center gap-3 px-10 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-[#ea9237] transition-all duration-300 shadow-xl hover:shadow-[#ea9237]/20 overflow-hidden"
                     >
                         <span className="relative z-10 text-white">Explore More Blogs</span>
-                        <div className="relative z-10 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-[#fae57f] transition-all">
+                        <div className="relative z-10 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-[#ea9237] transition-all">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-5 h-5 transition-transform group-hover:translate-x-1"

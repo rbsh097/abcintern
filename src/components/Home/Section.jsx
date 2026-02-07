@@ -68,7 +68,7 @@ export default function Section() {
                     <div className="flex items-center justify-center">
                         <div className="relative w-full max-w-md">
                             <img
-                                src="/tree.png"
+                                src="/tree1.png"
                                 alt="ABC International"
                                 className="w-full h-auto rounded-3xl"
                             />

@@ -18,7 +18,7 @@ const OurBusinesses = () => {
             title: "Natural",
             subTitle: "We Care",
             logo: "/logob.png",
-            description: "Inspiring shift to a life-changing plant-based way of living",
+            description: "World-class pet medicines, nutrition, and lifestyle solutions accessible and affordable",
             bgGradient: "from-[#9444A1] via-white to-[#9444A1]",
             textColor: "text-green-900",
             accent: "text-green-700",

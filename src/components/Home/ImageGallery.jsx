@@ -21,19 +21,19 @@ export default function ImageGallery() {
             description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
         },
         {
-            src: '/u3.png',
-            title: 'Certification',
-            description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
+            src: '/foots/1.png',
+            title: 'Myanmar Radiation Oncology Conference',
+            description: 'Participated in the radiation conference. All radio- oncologist from Yangon , Mandalay Nay Pyi Taw , Taunggyi attend the conference.'
         },
         {
-            src: '/u3.png',
-            title: 'Certification',
-            description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
+            src: '/foots/2.png',
+            title: 'ABC Derma Care',
+            description: 'Luzo Club Meet at PyiNOoLwin - Engaging Dermatologist from Mandalay & TaungGyi'
         },
         {
-            src: '/u3.png',
-            title: 'Certification',
-            description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
+            src: '/foots/3.png',
+            title: 'Great Place to Work Certified',
+            description: 'We’re thrilled to announce that R-Biomeds has been certified as a Great Place to Work for 2025, making us only the second pharmaceutical company in Myanmar to receive this honor.'
         }
     ];
 

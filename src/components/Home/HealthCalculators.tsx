@@ -9,28 +9,28 @@ const calculators = [
     {
         type: "bmi",
         title: "BMI Calculator",
-        icon: "/images/calculators/bmi.png",
+        icon: "/calcy/3.png",
         href: "/calculators?type=bmi",
         description: "Calculate your Body Mass Index (BMI) to understand if you are at a healthy weight for your height. It's a quick and useful screening tool used globally by health professionals."
     },
     {
         type: "bmr",
         title: "BMR Calculator",
-        icon: "/images/calculators/bmr.png",
+        icon: "/calcy/1.png",
         href: "/calculators?type=bmr",
         description: "Determine your Basal Metabolic Rate (BMR) to understand exactly how many calories your body needs to maintain basic functions. Essential for planning nutrition and fitness goals."
     },
     {
         type: "bodyfat",
         title: "Body Fat Calculator",
-        icon: "/images/calculators/bodyfat.png",
+        icon: "/calcy/2.png",
         href: "/calculators?type=bodyfat",
         description: "Estimate your body fat percentage to get a clearer picture of your overall body composition and metabolic health, providing insights beyond just weight."
     },
     {
         type: "heartrate",
         title: "Heart Rate Zone",
-        icon: "/images/calculators/heartrate.png",
+        icon: "/calcy/4.png",
         href: "/calculators?type=heartrate",
         description: "Identify your heart rate zones to optimize your training. Whether you're aiming for fat burn or peak performance, work out more effectively."
     }
@@ -40,7 +40,7 @@ const HealthCalculators = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <section className="py-24 bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] px-4 md:px-6">
+        <section className="py-24 bg-gray-200 px-4 md:px-6">
             <div className="container mx-auto">
                 {/* Header Section */}
                 <div className="text-center max-w-4xl mx-auto mb-20">
@@ -53,66 +53,43 @@ const HealthCalculators = () => {
                 </div>
 
                 {/* Grid Section - Showcasing UI */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, staggerChildren: 0.1 }}
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 lg:gap-y-8 max-w-7xl mx-auto"
-                >
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 lg:gap-y-8 max-w-7xl mx-auto">
                     {calculators.map((calc, index) => (
-                        <motion.div
+                        <Link
+                            href={calc.href}
                             key={calc.type}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            whileHover={{ y: -8 }}
+                            className="relative group cursor-pointer block"
+                            onMouseEnter={() => setHoveredIndex(index)}
+                            onMouseLeave={() => setHoveredIndex(null)}
                         >
-                            <Link
-                                href={calc.href}
-                                className="relative group cursor-pointer block"
-                                onMouseEnter={() => setHoveredIndex(index)}
-                                onMouseLeave={() => setHoveredIndex(null)}
-                            >
-                                {/* Image/Icon Wrapper - Styled like Showcasing cards */}
-                                <div className={`relative h-56 rounded-3xl overflow-hidden border-2 flex items-center justify-center transition-all duration-500 bg-gray-50`}>
-                                    {calc.type === "heartrate" ? (
-                                        <div className="w-full h-full bg-gradient-to-br from-rose-500 to-orange-400 flex items-center justify-center group-hover:scale-105 transition-transform duration-700">
-                                            <Activity className="w-24 h-24 text-white animate-pulse" />
-                                        </div>
-                                    ) : (
-                                        <Image
-                                            src={calc.icon}
-                                            alt={calc.title}
-                                            width={420}
-                                            height={220}
-                                            className="object-cover transition-transform duration-700 "
-                                        />
-                                    )}
-                                    {/* Background glow effect on hover */}
-                                    <div className="absolute inset-0 bg-white/5 transition-opacity duration-500"></div>
-                                </div>
+                            {/* Image/Icon Wrapper - Styled like Showcasing cards */}
+                            <div className={`relative h-56 rounded-3xl overflow-hidden flex items-center justify-center transition-all duration-500 bg-white`}>
 
-                                {/* Floating Content Box - Matches Showcasing style */}
-                                <div className="-mt-7 px-6  relative z-10 w-full">
-                                    <div
-                                        className="bg-gray-200 rounded-[2.5rem] px-4 py-2 w-full border border-gray-100"
-                                    >
-                                        <div className="flex items-center justify-between">
-                                            <h3 className="text-xl lg:text-lg font-medium text-black  ">
-                                                {calc.title}
-                                            </h3>
-                                            <div className="bg-black group-hover:bg-[#ea9237] text-white w-10 h-10 lg:w-6 lg:h-6 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:rotate-45">
-                                                <ArrowUpRight className="w-5 h-5 lg:w-5 lg:h-5" />
-                                            </div>
+                                <Image
+                                    src={calc.icon}
+                                    alt={calc.title}
+                                    width={220}
+                                    height={220}
+                                    className="object-contain transition-transform duration-700 "
+                                />
+                            </div>
+
+                            {/* Floating Content Box - Matches Showcasing style */}
+                            <div className="-mt-7 px-6  relative z-10 w-full">
+                                <div className="bg-gray-200 rounded-[2.5rem] px-4 py-2 w-full border border-gray-100">
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="text-xl lg:text-lg font-medium text-black  ">
+                                            {calc.title}
+                                        </h3>
+                                        <div className="bg-black group-hover:bg-[#ef662a] text-white w-10 h-10 lg:w-6 lg:h-6 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:rotate-45">
+                                            <ArrowUpRight className="w-5 h-5 lg:w-5 lg:h-5" />
                                         </div>
                                     </div>
                                 </div>
-                            </Link>
-                        </motion.div>
+                            </div>
+                        </Link>
                     ))}
-                </motion.div>
+                </div>
             </div>
         </section>
     );

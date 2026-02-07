@@ -15,10 +15,17 @@ interface Article {
     createdAt: string;
 }
 
+const API_BASE = typeof window !== 'undefined' && (
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1' ||
+    window.location.hostname.startsWith('192.168.')
+) ? `http://${window.location.hostname}:5001` : 'https://rbiomedsback.onrender.com';
+
 const AdminArticles = () => {
     const [articles, setArticles] = useState<Article[]>([]);
     const [loading, setLoading] = useState(true);
     const [submitting, setSubmitting] = useState(false);
+    const [uploading, setUploading] = useState(false);
     const [editingId, setEditingId] = useState<string | null>(null);
     const [formData, setFormData] = useState({
         title: "",
@@ -30,7 +37,7 @@ const AdminArticles = () => {
 
     const fetchArticles = async () => {
         try {
-            const response = await fetch("https://rbiomedsback.onrender.com/api/articles");
+            const response = await fetch(`${API_BASE}/api/articles`);
             if (!response.ok) throw new Error("Failed to fetch");
             const data = await response.json();
             setArticles(data);
@@ -45,13 +52,43 @@ const AdminArticles = () => {
         fetchArticles();
     }, []);
 
+    const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        setUploading(true);
+        const uploadData = new FormData();
+        uploadData.append("image", file);
+
+        try {
+            const response = await fetch(`${API_BASE}/api/upload`, {
+                method: "POST",
+                body: uploadData,
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                setFormData(prev => ({ ...prev, image: data.imageUrl }));
+            } else {
+                const errorData = await response.json();
+                console.error("Upload failed:", errorData.error);
+                alert(`Upload failed: ${errorData.error}`);
+            }
+        } catch (error) {
+            console.error("Error uploading image:", error);
+            alert("Error uploading image. Check console for details.");
+        } finally {
+            setUploading(false);
+        }
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setSubmitting(true);
         try {
             const url = editingId
-                ? `https://rbiomedsback.onrender.com/api/articles/${editingId}`
-                : "https://rbiomedsback.onrender.com/api/articles";
+                ? `${API_BASE}/api/articles/${editingId}`
+                : `${API_BASE}/api/articles`;
             const method = editingId ? "PUT" : "POST";
 
             const response = await fetch(url, {
@@ -86,7 +123,7 @@ const AdminArticles = () => {
     const handleDelete = async (id: string) => {
         if (!confirm("Are you sure you want to delete this article? This action cannot be undone.")) return;
         try {
-            const response = await fetch(`https://rbiomedsback.onrender.com/api/articles/${id}`, { method: "DELETE" });
+            const response = await fetch(`${API_BASE}/api/articles/${id}`, { method: "DELETE" });
             if (response.ok) fetchArticles();
         } catch (error) {
             console.error("Failed to delete:", error);
@@ -167,8 +204,13 @@ const AdminArticles = () => {
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 px-1">Image URL</label>
-                                    <div className="relative">
+                                    <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 px-1 flex justify-between">
+                                        <span>Image</span>
+                                        <span className="text-[#ef662e] cursor-pointer hover:underline" onClick={() => document.getElementById('image-upload')?.click()}>
+                                            Upload File
+                                        </span>
+                                    </label>
+                                    <div className="relative group">
                                         <input
                                             type="url"
                                             value={formData.image}
@@ -177,7 +219,30 @@ const AdminArticles = () => {
                                             placeholder="https://..."
                                         />
                                         <ImageIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                                        {uploading && (
+                                            <div className="absolute right-4 top-1/2 -translate-y-1/2">
+                                                <Loader2 className="w-4 h-4 text-[#ef662e] animate-spin" />
+                                            </div>
+                                        )}
+                                        <input
+                                            id="image-upload"
+                                            type="file"
+                                            accept="image/*"
+                                            onChange={handleImageUpload}
+                                            className="hidden"
+                                        />
                                     </div>
+                                    {formData.image && (
+                                        <div className="relative w-full h-32 rounded-2xl overflow-hidden mt-2 bg-gray-50 border border-gray-100">
+                                            <img src={formData.image} alt="Preview" className="w-full h-full object-cover" />
+                                            <button
+                                                onClick={() => setFormData({ ...formData, image: "" })}
+                                                className="absolute top-2 right-2 p-1.5 bg-black/50 hover:bg-red-500 text-white rounded-full transition-colors"
+                                            >
+                                                <X className="w-3 h-3" />
+                                            </button>
+                                        </div>
+                                    )}
                                 </div>
 
                                 <div className="space-y-2">

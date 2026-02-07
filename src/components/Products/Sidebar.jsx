@@ -77,7 +77,7 @@ export default function Sidebar({ activeCategory }) {
                     <input
                         type="text"
                         placeholder="Search Categories"
-                        className="w-full bg-gray-50 border border-gray-200 rounded-full pl-12 pr-5 py-3 text-gray-600 outline-none focus:border-[#fae57f] transition-colors"
+                        className="w-full bg-gray-50 border border-gray-200 rounded-full pl-12 pr-5 py-3 text-gray-600 outline-none focus:border-[#e57f00] transition-colors"
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                     />
@@ -96,8 +96,8 @@ export default function Sidebar({ activeCategory }) {
                                         key={cat.slug}
                                         href={`/ourproduct/${cat.slug}`}
                                         className={`flex items-center justify-between px-2 py-2 rounded-lg group/item transition-all ${activeCategory === cat.slug
-                                            ? 'bg-[#fae57f]/10 text-[#fae57f] font-semibold'
-                                            : 'text-gray-600 hover:bg-gray-50 hover:text-[#fae57f]'
+                                            ? 'bg-[#e57f00]/10 text-[#e57f00] font-semibold'
+                                            : 'text-gray-600 hover:bg-gray-50 hover:text-[#e57f00]'
                                             }`}
                                     >
                                         <span className="text-[15px]">{cat.title}</span>

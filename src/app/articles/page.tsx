@@ -108,7 +108,7 @@ const ArticlesContent = () => {
         <main className="bg-white min-h-screen pt-30 pb-20">
             <div className="container mx-auto max-w-7xl">
                 <div className="mb-16">
-                    <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium uppercase text-black mb-6 hover:text-[#ef662a]">
+                    <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium uppercase text-black mb-6 hover:text-[#ea9237]">
                         Our Journal
                     </h1>
                     <p className="text-xl text-gray-600 max-w-2xl font-medium">
