@@ -6,15 +6,9 @@ export const leadershipTeam = [
         bio: "Rajeev, an alumnus of the Indian Institute of Kolkata, India, brings over 30 years of leadership experience in the pharmaceutical industry across India, Southeast Asia, and the Middle East. He led Dr. Reddy’s Myanmar into a top-five position with sixfold sales growth in seven years, built strong ethical and OTC brands, and later founded ABC International with a culture of innovation and excellence. He is also the Vice President of the India–Myanmar Chamber of Commerce."
     },
     {
-        name: "Dinesh Kandwal",
-        role: "Executive Director",
-        image: "/OurPeoples/2.png",
-        bio: "Dinesh has over 30 years of industry experience in companies like Dr.Reddy’s, where he worked as Director. He has rich experience spanning across value chain such as R&D, Manufacturing, Supply Chain and Sales & Marketing. He also managed company’s HR functions in India, Central Asia and Europe. He started his career in Sales & Marketing, subsequently transitioned to P&L Management and then to HR."
-    },
-    {
         name: "Jyoti Rawal",
         role: "Founding Member, Executive Director",
-        image: "/OurPeoples/3.png",
+        image: "/OurPeoples/jyoti.png",
         bio: "An educator turned corporate professional, Mrs. Rawal leverages her expertise in management and operations in performing multiple responsibilities in ABC international Myanmar including supply chain and business development. Mrs. Jyoti Rawal is also one of the key founding members of ABC International and R – Biomeds, Singapore. "
     },
     {
@@ -23,6 +17,13 @@ export const leadershipTeam = [
         image: "/OurPeoples/4.png",
         bio: "Over two decades of experience in pharmaceutical industry with a vey versatile roles in HR, Regulatory & Logistics  in Myanmar. With her  proven track-record of combining strong industry knowledge with excellent management skills to identify and maximize business opportunities , She has played a important role in the growth trajectory of company. Prior to joining ABC, She was heading the Regulatory department of  the most admired Pharmaceutical company in Myanmar - Dr.Reddys"
     },
+    {
+        name: "Dinesh Kandwal",
+        role: "Executive Director",
+        image: "/OurPeoples/2.png",
+        bio: "Dinesh has over 30 years of industry experience in companies like Dr.Reddy’s, where he worked as Director. He has rich experience spanning across value chain such as R&D, Manufacturing, Supply Chain and Sales & Marketing. He also managed company’s HR functions in India, Central Asia and Europe. He started his career in Sales & Marketing, subsequently transitioned to P&L Management and then to HR."
+    },
+
 
     {
         name: "Jeet Singh",
@@ -77,7 +78,7 @@ export const financeTeam = [
     {
         name: "Mr. Daanish Rawal",
         role: "Business Development Manager",
-        image: "/OurPeoples/13.png",
+        image: "/OurPeoples/danish.png",
         bio: "Over 6 years of Enterprise level sales experience in fortune 500 organizations, prior to joining ABC Also holds two years experience as a team lead, responsible for target achievement of 15 team members, successfully ensuring attainment. Currently working on several new business projects ranging from niche drugs (adalimumab), medical device, OTC and oncology"
     },
     {

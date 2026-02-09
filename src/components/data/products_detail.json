@@ -365,8 +365,8 @@
             "id": "glucomeal-vanilla",
             "title": "Oncofusion IV Infusion Set",
             "description": "An easy and effective meal and snack solution for diabetics.",
-            "image": "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?w=400&h=400&fit=crop",
-            "image2": "/d2.png"
+            "image": "/oncology/OncofusionPack.png",
+            "image2": "/oncology/OncofusionPack.png"
         },
         {
             "id": "immuplex",
@@ -393,8 +393,8 @@
             "id": "rekover",
             "title": "Photofusion IV Infusion Set",
             "description": "Boost immunity and maintain your overall health",
-            "image": "https://images.unsplash.com/photo-1540344448520-21396a5d44d4?w=400&h=400&fit=crop",
-            "image2": "/d2.png"
+            "image": "/oncology/PhotofusionPack.png",
+            "image2": "/oncology/PhotofusionPack.png"
         },
         {
             "id": "glucomeal-vanilla",
@@ -1067,8 +1067,8 @@
             "id": "immuplex",
             "title": "Kids Bunny Gel 13 gm",
             "description": "Dental Gel for Kids",
-            "image": "/ChildHealth/KidsBunnyGel13gmPack.png",
-            "image2": "/ChildHealth/KidsBunnyGel13gm.png"
+            "image": "/ChildHealth/KidsBunnyy.png",
+            "image2": "/ChildHealth/KidsBunnyy.png"
         },
         {
             "id": "immuplex",
