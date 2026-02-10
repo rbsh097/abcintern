@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ImageGallery() {
     const [hoveredIndex, setHoveredIndex] = useState(0);
@@ -39,50 +40,59 @@ export default function ImageGallery() {
 
     return (
         <div
-            className="bg-white md:py-16 px-10"
+            className="bg-white md:py-16 px-10 py-10"
             onMouseLeave={() => setHoveredIndex(0)}
         >
-            <div className="container mx-auto ">
-                <div className="flex gap-4 items-start justify-center">
+            <div className="container mx-auto">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-center">
                     {images.map((image, index) => {
                         const isHovered = hoveredIndex === index;
-                        const isOtherHovered = hoveredIndex !== index;
 
                         return (
                             <div
                                 key={index}
                                 onMouseEnter={() => setHoveredIndex(index)}
-                                className={`relative rounded-3xl overflow-hidden cursor-pointer transition-all duration-700 md:bg-transparent bg-black  ${isHovered
-                                    ? '2xl:w-[900px] md:w-[700px] md:h-[600px] w-[1000px] h-[400px]  2xl:h-[750px]'
-                                    : isOtherHovered
-                                        ? '2xl:w-[400px] md:w-[100px] w-[200px] h-[400px] md:h-[600px] 2xl:h-[750px]'
-                                        : '2xl:w-[400px] md:w-[330px] w-[900px] h-[400px] md:h-[600px] 2xl:h-[750px]'
-                                    }`}
+                                className={`
+                                    relative rounded-3xl overflow-hidden cursor-pointer transition-all duration-700
+                                    w-full
+                                    h-[400px] md:h-[600px] 2xl:h-[750px]
+                                    ${isHovered
+                                        ? 'md:w-[700px] 2xl:w-[900px] md:flex-grow'
+                                        : 'md:w-[100px] 2xl:w-[150px] md:flex-none'
+                                    }
+                                `}
                             >
                                 {/* Image */}
-                                <img
+                                <Image
                                     src={image.src}
                                     alt={image.title}
-                                    className="2xl:w-[800px] w-[700px] md:h-full md:object-contain object-contain md:max-w-none"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
 
-                                {/* Gradient Overlay - appears on hover */}
+                                {/* Gradient Overlay */}
                                 <div
-                                    className={`absolute inset-0 bg-gradient-to-t from-black to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-60' : 'opacity-0'
-                                        }`}
+                                    className={`
+                                        absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent transition-opacity duration-500
+                                        ${isHovered ? 'opacity-100' : 'md:opacity-0 opacity-100'}
+                                    `}
                                 />
 
-                                {/* Text Content - animates from bottom on hover */}
+                                {/* Text Content */}
                                 <div
-                                    className={`absolute bottom-0 left-0 right-0 text-white transition-all duration-700 p-6 md:bg-transparent bg-black ${isHovered
-                                        ? 'translate-y-0 opacity-100'
-                                        : 'translate-y-full opacity-0'
-                                        }`}
+                                    className={`
+                                        absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white transition-all duration-700
+                                        ${isHovered
+                                            ? 'translate-y-0 opacity-100'
+                                            : 'md:translate-y-full md:opacity-0 translate-y-0 opacity-100'
+                                        }
+                                    `}
                                 >
-                                    <p className="text-sm font-medium mb-2 tracking-wide">
+                                    <p className="text-[#ffffff] text-xs font-bold uppercase tracking-widest mb-2">
                                         {image.title}
                                     </p>
-                                    <h3 className="md:text-2xl sm:bg-black md:bg-transparent text-base font-bold leading-tight">
+                                    <h3 className="text-xl md:text-2xl font-bold leading-tight">
                                         {image.description}
                                     </h3>
                                 </div>

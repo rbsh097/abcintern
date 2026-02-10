@@ -63,27 +63,27 @@ export default function ExploreProducts() {
     const filteredCategories = categories.filter(cat => cat.tab === activeTab);
 
     return (
-        <section className="py-20 bg-white">
-            <div className="container mx-auto">
+        <section className="py-12 md:py-20 bg-white">
+            <div className="container mx-auto px-4">
                 {/* Heading Section */}
-                <div className="text-center mb-12 mt-10 2xl:mt-20">
-                    <h2 className="text-[3.5rem] font-bold text-gray-500 hover:text-[#e57f00] leading-tight mb-4">
+                <div className="text-center mb-8 md:mb-12 mt-4 md:mt-10 2xl:mt-20">
+                    <h2 className="text-3xl md:text-[3.5rem] font-bold text-gray-500 hover:text-[#e57f00] leading-tight mb-4">
                         Quality Healthcare Products For Every Need
                     </h2>
-                    <p className="max-w-7xl mx-auto text-gray-500 text-lg leading-relaxed">
+                    <p className="max-w-7xl mx-auto text-gray-500 text-base md:text-lg leading-relaxed">
                         At ABC International, we are dedicated to developing, manufacturing, sourcing and delivering only the highest quality pharmaceutical products along with renowned partners across the globe.
                         We understand that in healthcare, excellence is non-negotiable. That's why we have established partnerships with industry leaders who share our commitment to uncompromising quality and patient well-being.
                     </p>
                 </div>
 
                 {/* Tab Navigation */}
-                <div className="flex justify-center mb-16 ">
-                    <div className="inline-flex gap-2 bg-[#fae57f] rounded-full p-1 ">
+                <div className="flex justify-start md:justify-center mb-10 md:mb-16 overflow-x-auto no-scrollbar pb-4 md:pb-0">
+                    <div className="inline-flex gap-2 bg-[#fae57f] rounded-full p-1 whitespace-nowrap mx-auto">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`px-10 py-3 rounded-full text-lg font-medium transition-all duration-300 ${activeTab === tab.id
+                                className={`px-6 md:px-10 py-2.5 md:py-3 rounded-full text-sm md:text-lg font-medium transition-all duration-300 ${activeTab === tab.id
                                     ? 'bg-white text-gray-700 shadow-md'
                                     : 'text-gray-600 hover:bg-white hover:text-gray-600'
                                     }`}
@@ -95,7 +95,7 @@ export default function ExploreProducts() {
                 </div>
 
                 {/* Categories Grid - showing for all tabs now */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-12 max-w-6xl mx-auto">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-4 md:gap-x-8 gap-y-10 md:gap-y-12 max-w-6xl mx-auto">
                     {filteredCategories.length > 0 ? (
                         filteredCategories.map((category) => (
                             <Link
@@ -103,7 +103,7 @@ export default function ExploreProducts() {
                                 key={category.id}
                                 className="flex flex-col items-center group cursor-pointer"
                             >
-                                <div className="relative w-32 h-32 mb-4 transition-transform duration-300 group-hover:scale-110">
+                                <div className="relative w-24 h-24 md:w-32 md:h-32 mb-4 transition-transform duration-300 group-hover:scale-110">
                                     <div className="absolute inset-0 bg-[#fae57f]/30 rounded-full blur-xl scale-0 group-hover:scale-100 transition-transform duration-500 opacity-60"></div>
 
                                     <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-transparent group-hover:border-[#fae57f]/20 transition-all duration-300">
@@ -115,7 +115,7 @@ export default function ExploreProducts() {
                                         />
                                     </div>
                                 </div>
-                                <h3 className="text-center font-bold text-[#1e293b] text-lg group-hover:text-[#e57f00] transition-colors duration-300">
+                                <h3 className="text-center font-bold text-[#1e293b] text-base md:text-lg group-hover:text-[#e57f00] transition-colors duration-300">
                                     {category.title}
                                 </h3>
                             </Link>

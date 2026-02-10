@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Search, ChevronRight } from 'lucide-react';
+import { Search, ChevronRight, Filter, X, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 
 const allCategories = [
@@ -54,6 +54,7 @@ const tabTitles = {
 
 export default function Sidebar({ activeCategory }) {
     const [searchQuery, setSearchQuery] = useState('');
+    const [isOpen, setIsOpen] = useState(false);
 
     const filteredCategories = allCategories.filter(cat =>
         cat.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -67,53 +68,80 @@ export default function Sidebar({ activeCategory }) {
     }, {});
 
     return (
-        <div className="space-y-10 group/sidebar">
-
-
-            {/* Filter by Category */}
-            <div>
-                <h3 className="text-xl font-bold text-black mb-4">Filter by Category</h3>
-                <div className="relative mb-6">
-                    <input
-                        type="text"
-                        placeholder="Search Categories"
-                        className="w-full bg-gray-50 border border-gray-200 rounded-full pl-12 pr-5 py-3 text-gray-600 outline-none focus:border-[#e57f00] transition-colors"
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                    />
-                    <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+        <div className="group/sidebar">
+            {/* Mobile Toggle Button */}
+            <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="lg:hidden w-full flex items-center justify-between bg-white border border-gray-200 rounded-xl px-5 py-3.5 mb-6 text-black font-bold shadow-sm active:scale-[0.98] transition-all"
+            >
+                <div className="flex items-center gap-3">
+                    <Filter className="w-5 h-5 text-[#e57f00]" />
+                    <span>Filter by Category</span>
                 </div>
+                <div className="flex items-center gap-2">
+                    <span className="text-sm font-medium text-gray-500">
+                        {isOpen ? 'Close' : 'View All'}
+                    </span>
+                    <ChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+                </div>
+            </button>
 
-                <div className="space-y-8 max-h-[600px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent">
-                    {Object.entries(groupedCategories).map(([tabKey, cats]) => (
-                        <div key={tabKey} className="space-y-3">
-                            <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 px-2">
-                                {tabTitles[tabKey]}
-                            </h4>
-                            <div className="space-y-1">
-                                {cats.map((cat) => (
-                                    <Link
-                                        key={cat.slug}
-                                        href={`/ourproduct/${cat.slug}`}
-                                        className={`flex items-center justify-between px-2 py-2 rounded-lg group/item transition-all ${activeCategory === cat.slug
-                                            ? 'bg-[#e57f00]/10 text-[#e57f00] font-semibold'
-                                            : 'text-gray-600 hover:bg-gray-50 hover:text-[#e57f00]'
-                                            }`}
-                                    >
-                                        <span className="text-[15px]">{cat.title}</span>
-                                        <ChevronRight className={`w-4 h-4 transition-all duration-300 ${activeCategory === cat.slug
-                                            ? 'opacity-100 translate-x-0'
-                                            : 'opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0'
-                                            }`} />
-                                    </Link>
-                                ))}
+            {/* Sidebar Content */}
+            <div className={`
+                ${isOpen ? 'block' : 'hidden'} 
+                lg:block space-y-10 animate-in fade-in slide-in-from-top-4 duration-300 lg:animate-none
+            `}>
+                {/* Filter by Category */}
+                <div>
+                    <h3 className="hidden lg:block text-xl font-bold text-black mb-6">Filter by Category</h3>
+
+                    <div className="relative mb-6">
+                        <input
+                            type="text"
+                            placeholder="Search Categories"
+                            className="w-full bg-gray-50 border border-gray-200 rounded-full pl-12 pr-5 py-3 text-gray-600 outline-none focus:border-[#e57f00] focus:ring-4 focus:ring-[#e57f00]/5 transition-all"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                        />
+                        <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                    </div>
+
+                    <div className="space-y-8 max-h-[500px] lg:max-h-[600px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent">
+                        {Object.entries(groupedCategories).map(([tabKey, cats]) => (
+                            <div key={tabKey} className="space-y-3">
+                                <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 px-2 flex items-center gap-2">
+                                    <span className="w-1 h-1 bg-[#e57f00] rounded-full"></span>
+                                    {tabTitles[tabKey]}
+                                </h4>
+                                <div className="space-y-1">
+                                    {cats.map((cat) => (
+                                        <Link
+                                            key={cat.slug}
+                                            href={`/ourproduct/${cat.slug}`}
+                                            onClick={() => setIsOpen(false)}
+                                            className={`flex items-center justify-between px-3 py-2.5 rounded-xl group/item transition-all ${activeCategory === cat.slug
+                                                ? 'bg-[#e57f00] text-white font-semibold shadow-md shadow-[#e57f00]/20'
+                                                : 'text-gray-600 hover:bg-gray-100 hover:text-[#e57f00]'
+                                                }`}
+                                        >
+                                            <span className="text-[15px]">{cat.title}</span>
+                                            <ChevronRight className={`w-4 h-4 transition-all duration-300 ${activeCategory === cat.slug
+                                                ? 'opacity-100 translate-x-0'
+                                                : 'opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0'
+                                                }`} />
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
 
-                    {Object.keys(groupedCategories).length === 0 && (
-                        <p className="text-center text-gray-400 py-4">No categories found</p>
-                    )}
+                        {Object.keys(groupedCategories).length === 0 && (
+                            <div className="text-center py-10 bg-gray-50 rounded-2xl border border-dashed border-gray-200 mx-2">
+                                <Search className="w-8 h-8 text-gray-300 mx-auto mb-2" />
+                                <p className="text-gray-400 text-sm">No categories found</p>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

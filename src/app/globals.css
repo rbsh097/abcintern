@@ -31,3 +31,11 @@ body {
   font-weight: 600;
   font-style: normal;
 }
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
