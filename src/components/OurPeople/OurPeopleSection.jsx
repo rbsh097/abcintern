@@ -14,7 +14,7 @@ export default function OurPeopleSection() {
 
                     {/* TEXT + BG IMAGE */}
                     <div
-                        style={{ backgroundImage: "url('/p.png')" }}
+                        style={{ backgroundImage: "url('/peeps/2.png')" }}
                         className="w-full bg-cover bg-center bg-no-repeat rounded-[2rem] flex"
                     >
                         <div className="p-6 sm:p-8 lg:p-12 2xl:p-20 rounded-[2rem] flex flex-col justify-center">
@@ -30,7 +30,7 @@ export default function OurPeopleSection() {
                     {/* IMAGE */}
                     <div className="w-full h-[260px] sm:h-[340px] lg:h-full">
                         <img
-                            src="/p1.png"
+                            src="/peeps/1.png"
                             alt="Our Team"
                             className="w-full h-full object-cover rounded-[2rem]"
                         />

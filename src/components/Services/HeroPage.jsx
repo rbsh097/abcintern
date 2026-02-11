@@ -6,6 +6,7 @@ const phases = [
     {
         id: "01",
         title: "Preferred Partners",
+        image: "/serviceicon/1.png",
         description:
             "We are the trusted importer, distributor, and marketing partner for leading multinational brands across Myanmar and beyond, recognized for excellence.",
         bgColor: "bg-[#F5F5F5]",
@@ -14,14 +15,16 @@ const phases = [
     {
         id: "02",
         title: "Global Reach, Local Expertise",
+        image: "/serviceicon/2.png",
         description:
-            "With a presence in key markets across Asia, we combine our global reach with deep-rooted local insights to deliver tailored solutions. ",
+            "With a presence in key markets across Myanmar, we combine our global reach with deep-rooted local insights to deliver tailored solutions. ",
         bgColor: "bg-[#F5F5F5]",
         textColor: "text-black",
     },
     {
         id: "03",
         title: "Regulatory Prowess",
+        image: "/serviceicon/3.png",
         description:
             "Navigate the complex regulatory landscape with confidence. Our dedicated team ensures compliance at every step, allowing you to focus on what matters most your mission. ",
         bgColor: "bg-[#F5F5F5]",
@@ -30,6 +33,7 @@ const phases = [
     {
         id: "04",
         title: "Trademark Guardians",
+        image: "/serviceicon/4.png",
         description:
             "Safeguard your brand with our seamless trademark registration services. We understand the value of your intellectual property and take every measure to protect it. ",
         bgColor: "bg-[#F5F5F5]",
@@ -39,6 +43,7 @@ const phases = [
     {
         id: "05",
         title: "Strategic Healthcare Consultancy",
+        image: "/serviceicon/5.png",
         description:
             "Leverage our extensive industry knowledge to make informed decisions. Whether it's market entry strategies or product positioning, our consultancy services empower you to thrive.",
         bgColor: "bg-[#F5F5F5]",
@@ -47,22 +52,47 @@ const phases = [
     },
 ];
 
-const PhaseCard = ({ id, title, description, bgColor, textColor, className }) => (
-    <div
-        className={`group p-8 md:p-6 rounded-[2rem] flex flex-col gap-12 transition-all duration-500 cursor-default hover:bg-gradient-to-bl hover:from-white hover:to-[#fae57f]  ${bgColor} ${className}`}
-    >
-        <span className={`text-4xl md:text-4xl font-medium  ${textColor}`}>
-            {id}
-        </span>
-        <div className="space-y-2">
-            <h4 className={`text-xl md:text-2xl font-medium ${textColor} `}>
-                {title}
-            </h4>
-            <p className={`text-sm md:text-base leading-relaxed opacity-80 ${textColor}`}>
-                {description}
-            </p>
-        </div>
+const PhaseCard = ({
+  id,
+  title,
+  description,
+  bgColor,
+  textColor,
+  className,
+  image,
+}) => (
+  <div
+    className={`group p-8 md:p-6 rounded-[2rem] flex flex-col gap-12 transition-all duration-500 cursor-default hover:bg-gradient-to-bl hover:from-white hover:to-[#fae57f] ${bgColor} ${className}`}
+  >
+    {/* Top Section - Image + Number */}
+    <div className="flex items-center gap-4">
+     
+
+      <span className={`text-4xl font-medium ${textColor}`}>
+        {id}
+      </span>
+       <div className="relative w-12 h-12">
+        <img
+          src={image}
+          alt={title}
+          fill
+          className="object-contain"
+        />
+      </div>
     </div>
+
+    {/* Content */}
+    <div className="space-y-2">
+      <h4 className={`text-xl md:text-2xl font-medium ${textColor}`}>
+        {title}
+      </h4>
+      <p
+        className={`text-sm md:text-base leading-relaxed opacity-80 ${textColor}`}
+      >
+        {description}
+      </p>
+    </div>
+  </div>
 );
 
 export default function HeroPage() {

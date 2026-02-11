@@ -58,7 +58,7 @@ export const financeTeam = [
     },
     {
         name: "Dr. Hla Hla Htay",
-        role: "Country Head",
+        role: "Business Manager",
         image: "/OurPeoples/9.png",
         bio: "Proven expertise of 25 years in Pharmaceutical sales & Marketing and Brand Building She has been working as senior roles in top Pharma Companies in Myanmar such as Dr Reddy “s Laboratory, Vimpex ( Cambodia ) Possesses strengths like People Management, Channel Management, Territory Management, Team Development, Key Account Management."
     },
@@ -74,6 +74,12 @@ export const financeTeam = [
         role: "Head – RA & QA",
         image: "/OurPeoples/12.png",
         bio: "With impressive career spanning around 2 Decades in the field Regulatory Affairs & Quality Assurance. Her professional journey includes pivotal roles in renowned multinational such as united Pharma, Novartis & Roche with extensive exposure across Myanmar & few more SE countries. Prior to joining ABC, she has been working for Novartis as Country Regulatory Affair Lead."
+    },
+      {
+        name: "Daksh Rawal",
+        role: "Business Development Manager",
+        image: "/OurPeoples/daksh.png",
+        bio: "Daksh built global experience across leading organizations in Canada, North America, Australia, and Myanmar. He brings strong expertise in regulatory affairs, veterinary care, sales growth, client relationships, e-commerce strategy, and OTC brand development combining entrepreneurial agility with corporate discipline to align global practices with local market needs."
     },
     {
         name: "Mr. Daanish Rawal",

@@ -9,7 +9,7 @@ export default function ImageGallery() {
         {
             src: '/u.png',
             title: 'Social Responsibility',
-            description: 'R-Biomeds Singapore donated essential medicines to Cambodia’s border-affected communities in partnership with Pharmacie De La Gare and Ke Sinoun Hospital, Battambang.'
+            description: 'ABC International Singapore donated essential medicines to Cambodia’s border-affected communities in partnership with Pharmacie De La Gare and Ke Sinoun Hospital, Battambang.'
         },
         {
             src: '/u2.png',
@@ -34,7 +34,7 @@ export default function ImageGallery() {
         {
             src: '/foots/3.png',
             title: 'Great Place to Work Certified',
-            description: 'We’re thrilled to announce that R-Biomeds has been certified as a Great Place to Work for 2025, making us only the second pharmaceutical company in Myanmar to receive this honor.'
+            description: 'We’re thrilled to announce that ABC International has been certified as a Great Place to Work for 2025, making us only the second pharmaceutical company in Myanmar to receive this honor.'
         }
     ];
 
