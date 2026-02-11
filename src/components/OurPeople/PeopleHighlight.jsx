@@ -27,7 +27,7 @@ const PeopleHighlight = () => {
 
                             <div className="mt-8">
                                 <p className="text-black font-bold text-lg">Your Sincerely,</p>
-                                <p className="text-black font-extrabold text-2xl md:text-3xl mt-1 italic font-geist-sans">Mr. Rajeev Rawal</p>
+                                <p className="text-black font-extrabold text-2xl md:text-3xl mt-1 ">Rajeev Rawal</p>
                             </div>
                         </div>
 

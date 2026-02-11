@@ -141,7 +141,7 @@ const CalculatorContent = () => {
 
 
     return (
-        <section className="py-12 md:py-20 bg-white min-h-screen md:pt-0 pt-30">
+        <section className="py-12 md:py-20 bg-white min-h-screen md:pt-20 pt-30">
             <div className="container mx-auto px-4 md:px-6">
                 {/* Heading Section - Matches ExploreProduct */}
                 <div className="text-center mb-10 md:mb-12 mt-4 md:mt-10 2xl:mt-20">

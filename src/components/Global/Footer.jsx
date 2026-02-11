@@ -58,20 +58,20 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-10 pt-12">
-                                <div className="group cursor-pointer">
+                                <a href="mailto:info@abcinternational.com?subject=Contact Inquiry" className="group cursor-pointer">
                                     <h4 className="font-bold text-lg mb-1 text-black group-hover:text-[#ea9237] transition-all">Send a Message</h4>
                                     <div className="flex items-center gap-3">
                                         <Mail className="w-4 h-4 text-[#ea9237]" />
                                         <p className="text-gray-500 font-medium group-hover:text-black transition-colors">info@abcinternational.com</p>
                                     </div>
-                                </div>
-                                <div className="group cursor-pointer">
+                                </a>
+                                <a href="tel:+959979386000" className="group cursor-pointer">
                                     <h4 className="font-bold text-lg mb-1 text-black group-hover:text-[#ea9237] transition-all">Call us</h4>
                                     <div className="flex items-center gap-3">
                                         <Phone className="w-4 h-4 text-[#ea9237]" />
                                         <p className="text-gray-500 font-medium group-hover:text-black transition-colors">+95 9979386000</p>
                                     </div>
-                                </div>
+                                </a>
                                 <div className='flex flex-col gap-4'>
                                     <h1 className="font-bold text-xl text-black">Follow us on:</h1>
                                     <div className='flex flex-row gap-4'>
@@ -109,14 +109,19 @@ const Footer = () => {
                 </div>
 
                 {/* Lime Green Banner */}
-                <div className="bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] text-black rounded-[1.5rem] p-8 flex flex-col md:flex-row justify-between items-center transition-all hover:shadow-2xl hover:shadow-yellow-100">
+                <a
+                    href="mailto:info@abcinternational.com?subject=Contact Inquiry"
+                    className="bg-gradient-to-r from-[#fae57f] via-white to-[#fae57f] text-black rounded-[1.5rem] p-8 flex flex-col md:flex-row justify-between items-center transition-all hover:shadow-2xl hover:shadow-yellow-100 cursor-pointer group"
+                >
                     <h3 className="text-black text-2xl md:text-[1.5rem] 2xl:text-[1.8rem] font-bold text-center md:text-left md:mb-0  leading-tight">
                         Get in touch with ABC International for business, partnership, or healthcare inquiries.
                     </h3>
-                    <button className="bg-[#1a1a1a] md:mt-0 mt-4 text-white px-8 py-2 rounded-2xl font-extrabold text-lg hover:bg-black transition-all transform hover:scale-105 active:scale-95 shadow-2xl">
-                        Call Us Now
-                    </button>
-                </div>
+                    <div
+                        className="bg-[#1a1a1a] md:mt-0 mt-4 text-white px-8 py-2 rounded-2xl font-extrabold text-lg group-hover:bg-black transition-all transform group-hover:scale-105 active:scale-95 shadow-2xl inline-flex items-center justify-center whitespace-nowrap"
+                    >
+                        Message Us
+                    </div>
+                </a>
 
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 md:text-sm text-xs font-medium">

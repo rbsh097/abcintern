@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function HeroSection() {
@@ -64,38 +64,38 @@ export default function HeroSection() {
                     style={{ backgroundImage: "url('/h11.png')", backgroundSize: "cover" }}
                 >
                     <div
-                        className="static lg:absolute lg:top-20
-                                   flex flex-col gap-6 items-center text-center px-4 lg:px-6"
+                        className="absolute inset-0 flex flex-col gap-6 items-center mt-20 text-center px-4 lg:px-6"
                     >
-                        <span className="bg-[#ea9237] px-4 py-2 rounded-full text-white font-medium text-sm lg:text-base">
-                            ABC International Limited.
-                        </span>
-
-                        <h1 className="px-2 lg:px-6">
-                            <span className="inter-tight-1 block text-xl sm:text-2xl lg:text-[3.5rem] text-gray-500 leading-tight">
-                                Bridging Therapy Gaps with Novel,
-                            </span>
-                            <span className="inter-tight-1 block text-2xl sm:text-3xl lg:text-[3.5rem] leading-[1.1] text-black font-bold mt-2">
-                                High Quality & Affordable Medicines
-                            </span>
-                        </h1>
-
-                        <p className="text-gray-700 text-sm sm:text-base lg:text-lg max-w-2xl">
-                            To become one of the most trusted and respected healthcare organizations admired by our stakeholders for our customer-centricity, governed by strong core values, ethical corporate governance, social responsibility, and a deep commitment to employee recognition and empowerment.
-                        </p>
-
-                        {/* Newsletter */}
-                        <div className="w-full max-w-md flex items-center bg-white rounded-full p-1.5 shadow-md border">
-                            <input
-                                type="email"
-                                placeholder="Enter your email and subscribe"
-                                className="flex-1 bg-transparent px-4 py-2 outline-none text-sm lg:text-base"
-                            />
-                            <button className="p-3 bg-black rounded-full">
-                                <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5 text-white" />
-                            </button>
-                        </div>
-                    </div>
+                         <span className="bg-[#ea9237] px-4 py-2 rounded-full text-white font-medium text-sm lg:text-base">
+                             ABC International Limited.
+                         </span>
+ 
+                         <h1 className="px-2 lg:px-6">
+                             <span className="inter-tight-1 block text-xl sm:text-2xl lg:text-[2.4rem] text-gray-500 leading-tight">
+                                 Bridging Therapy Gaps with Novel,
+                             </span>
+                             <span className="inter-tight-1 block text-2xl sm:text-3xl lg:text-[2.4rem] leading-[1.1] text-black font-bold mt-2">
+                                 High Quality & Affordable Medicines
+                             </span>
+                         </h1>
+ 
+                         <p className="text-gray-700 text-sm sm:text-base lg:text-md max-w-xl">
+                             To become one of the most trusted and respected healthcare organizations admired by our stakeholders for our customer-centricity, governed by strong core values, ethical corporate governance, social responsibility, and a deep commitment to employee recognition and empowerment.
+                         </p>
+ 
+                         {/* Newsletter */}
+                           <div
+                             initial={{ opacity: 0, y: 20 }}
+                             animate={{ opacity: 1, y: 0 }}
+                             transition={{ duration: 0.5, delay: 0.3 }}
+                             className="flex items-center gap-4 mt-6"
+                         >
+                             <Link href="/service" className="group bg-[#ea9237] hover:bg-white text-white hover:text-[#ea9237] md:px-8 px-4 md:py-4 py-2 rounded-full font-bold md:text-md text-sm transition-all duration-300 flex items-center gap-2 ">
+                                 Explore Our Services
+                                 <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                             </Link>
+                         </div>
+                     </div>
                 </div>
 
                 {/* RIGHT COLUMN */}

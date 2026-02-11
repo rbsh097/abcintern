@@ -81,7 +81,7 @@ const HealthCalculators = () => {
                                         <h3 className="text-lg lg:text-lg font-medium text-black truncate pr-2">
                                             {calc.title}
                                         </h3>
-                                        <div className="bg-black group-hover:bg-[#ef662a] text-white w-8 h-8 lg:w-6 lg:h-6 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:rotate-45">
+                                        <div className="bg-black group-hover:bg-[#ea9237] text-white w-8 h-8 lg:w-6 lg:h-6 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:rotate-45">
                                             <ArrowUpRight className="w-4 h-4" />
                                         </div>
                                     </div>

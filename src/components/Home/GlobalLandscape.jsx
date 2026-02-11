@@ -20,27 +20,56 @@ const countries = [
         name: "India",
         flag: "https://flagcdn.com/w80/in.png",
         mobile: { top: "45%", left: "72%" },
-        desktop: { top: "35%", right: "15%" },
+        desktop: { top: "25%", right: "15%" },
     },
     {
         name: "Nepal",
         flag: "https://flagcdn.com/w80/np.png",
         mobile: { top: "25%", left: "70%" },
-        desktop: { top: "20%", right: "25%" },
+        desktop: { top: "18%", right: "25%" },
+    },
+     {
+        name: "China",
+        flag: "https://flagcdn.com/w80/cn.png",
+        mobile: { top: "40%", left: "80%" },
+        desktop: { top: "33%", right: "5%" },
+    },
+    {
+        name: "Bangladesh",
+        flag: "https://flagcdn.com/w80/bd.png",
+        mobile: { top: "50%", left: "72%" },
+        desktop: { top: "40%", right: "12%" },
+    },
+      {
+        name: "Pakistan",
+        flag: "https://flagcdn.com/w80/pk.png",
+        mobile: { top: "46%", left: "68%" },
+        desktop: { top: "50%", right: "12%" },
     },
 
     {
         name: "Myanmar",
         flag: "https://flagcdn.com/w80/mm.png",
         mobile: { top: "65%", left: "65%" },
-        desktop: { top: "55%", right: "10%" },
+        desktop: { top: "60%", right: "10%" },
     },
     {
         name: "Cambodia",
         flag: "https://flagcdn.com/w80/kh.png",
         mobile: { top: "78%", left: "48%" },
-        desktop: { top: "68%", right: "15%" },
+        desktop: { top: "72%", right: "15%" },
     },
+   
+
+
+
+
+
+
+
+
+
+
     {
         name: "Canada",
         flag: "https://flagcdn.com/w80/ca.png",
@@ -51,20 +80,35 @@ const countries = [
         name: "Singapore",
         flag: "https://flagcdn.com/w80/sg.png",
         mobile: { top: "72%", left: "12%" },
-        desktop: { top: "35%", left: "10%" }, // ⬅ moved right (was -80%)
+        desktop: { top: "30%", left: "10%" }, // ⬅ moved right (was -80%)
     },
     {
         name: "Philippines",
         flag: "https://flagcdn.com/w80/ph.png",
         mobile: { top: "40%", left: "6%" },
-        desktop: { top: "49%", left: "10%" }, // ⬅ moved right (was 10%)
+        desktop: { top: "40%", left: "10%" }, // ⬅ moved right (was 10%)
     },
     {
+        name: "Vietnam",
+        flag: "https://flagcdn.com/w80/vn.png",
+        mobile: { top: "60%", left: "15%" },
+        desktop: { top: "50%", left: "15%" },
+    },
+   
+    {
+        name: "Argentina",
+        flag: "https://flagcdn.com/w80/ar.png",
+        mobile: { top: "68%", left: "20%" },
+        desktop: { top: "60%", left: "20%" },
+    },
+     {
         name: "Laos",
         flag: "https://flagcdn.com/w80/la.png",
         mobile: { top: "52%", left: "10%" },
-        desktop: { top: "68%", left: "20%" }, // ⬅ moved right (was 85%)
+        desktop: { top: "70%", left: "20%" }, // ⬅ moved right (was 85%)
     },
+   
+    
 
 ];
 

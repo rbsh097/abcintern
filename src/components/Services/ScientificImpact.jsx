@@ -4,22 +4,9 @@ import React, { useState } from "react";
 import { Check, ArrowRight, Laptop, Ship, Megaphone, Truck, FileCheck, ShieldCheck, Users } from "lucide-react";
 
 const servicesData = [
+  
     {
         id: "01",
-        name: "Pharmaceutical Consultation",
-        icon: <Ship />,
-        heading: "Pharmaceutical Consultation",
-        description: "Backed with deep understanding of the pharmaceutical value chain and Myanmar market, ABC International offers end-to-end pharmaceutical consultation services.",
-        highlights: [
-            "Market entry strategy for global healthcare and pharma companies",
-            "Portfolio development & sourcing support",
-            "Assistance in setting up manufacturing facilities in Myanmar",
-            "Liaising for turnkey projects for global clients",
-        ],
-        progress: 16
-    },
-    {
-        id: "02",
         name: "Regulatory",
         icon: <Megaphone />,
         heading: "Regulatory",
@@ -30,10 +17,10 @@ const servicesData = [
             "Variation filings and documentation follow-up",
             "End-to-end regulatory coordination with authorities",
         ],
-        progress: 32
+        progress: 16
     },
     {
-        id: "03",
+        id: "02",
         name: "Trademark Registration",
         icon: <Truck />,
         heading: "Trademark Registration",
@@ -44,10 +31,10 @@ const servicesData = [
             "Timely and cost-effective execution",
             "Ongoing support for renewals and related IP matters",
         ],
-        progress: 48
+        progress: 32
     },
     {
-        id: "04",
+        id: "03",
         name: "Marketing",
         icon: <FileCheck />,
         heading: "Marketing",
@@ -58,10 +45,10 @@ const servicesData = [
             "Strategic market positioning and promotional planning",
             "Data-driven approach to grow prescription and product uptake",
         ],
-        progress: 64
+        progress: 48
     },
     {
-        id: "05",
+        id: "04",
         name: "Importation",
         icon: <ShieldCheck />,
         heading: "Importation",
@@ -72,10 +59,10 @@ const servicesData = [
             "Maintaining Drug Registration Certificates (DRCs) on behalf of clients",
             "Import handling for further distribution within Myanmar",
         ],
-        progress: 82
+        progress: 64
     },
     {
-        id: "06",
+        id: "05",
         name: "Distribution",
         icon: <Users />,
         heading: "Distribution",
@@ -86,8 +73,22 @@ const servicesData = [
             "Specialized handling of Oncology, Bio-similar, and other cold chain products",
             "Reliable last-mile delivery to healthcare providers and partners",
         ],
+        progress: 82
+    },
+      {
+        id: "06",
+        name: "Pharmaceutical Consultation",
+        icon: <Ship />,
+        heading: "Pharmaceutical Consultation",
+        description: "Backed with deep understanding of the pharmaceutical value chain and Myanmar market, ABC International offers end-to-end pharmaceutical consultation services.",
+        highlights: [
+            "Market entry strategy for global healthcare and pharma companies",
+            "Portfolio development & sourcing support",
+            "Assistance in setting up manufacturing facilities in Myanmar",
+            "Liaising for turnkey projects for global clients",
+        ],
         progress: 100
-    }
+    },
 ];
 
 const ScientificImpact = () => {

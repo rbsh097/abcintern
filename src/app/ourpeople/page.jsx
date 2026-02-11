@@ -21,7 +21,7 @@ export default function OurPeoplePage() {
                 />
 
                 <LeadershipBoard
-                    title="Meet Our Management Board"
+                    title="Meet Our Management Team"
                     leaders={financeTeam}
                 />
             </div>
