@@ -3,10 +3,20 @@ import "./globals.css";
 import Header from "../components/Global/Header";
 import Footer from "../components/Global/Footer";
 
-const interTight = localFont({
-  src: "../../public/InterTight-VariableFont_wght.ttf",
-  variable: "--font-inter-tight",
-  weight: "100 900", // Variable fonts usually cover a range
+
+
+const atkinson = localFont({
+  src: "../../public/AtkinsonHyperlegible-Regular.ttf",
+  variable: "--font-atkinson",
+  weight: "400",
+});
+
+
+
+const oxygen = localFont({
+  src: "../../public/Oxygen-Regular.ttf",
+  variable: "--font-oxygen",
+  weight: "400",
 });
 
 export const metadata = {
@@ -21,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${interTight.variable} antialiased font-[family-name:var(--font-inter-tight)]`}
+        className={` ${atkinson.variable} ${oxygen.variable} antialiased font-sans`}
       >
         <Header />
         {children}

@@ -36,7 +36,7 @@ function AnimatedCounter({ target, suffix = '+' }) {
     }, [isVisible, target]);
 
     return (
-        <div ref={counterRef} className="text-3xl lg:text-5xl font-bold text-black hover:text-[#ea9237]">
+        <div ref={counterRef} className="oxygen-regular text-3xl lg:text-5xl font-bold text-black hover:text-[#ea9237]">
             {count}{suffix}
         </div>
     );
@@ -44,7 +44,7 @@ function AnimatedCounter({ target, suffix = '+' }) {
 
 export default function NextSection() {
     const [currentImage, setCurrentImage] = useState(0);
-    const images = ['/t2.png', '/auntum.png'];
+    const images = ['/welcome/1.png', '/welcome/2.png'];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -83,7 +83,7 @@ export default function NextSection() {
                         py-4 lg:py-8 px-4 lg:pl-6
                         "
                     >
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 text-center lg:text-left">
+                        <div className="oxygen-regular grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 text-center lg:text-left">
                             <div>
                                 <AnimatedCounter target={1000} />
                                 <p className="text-sm lg:text-lg">Positive Reviews</p>

@@ -10,13 +10,13 @@ interface ArticleCardProps {
 
 const ArticleCard = ({ image, date, title, href }: ArticleCardProps) => {
     return (
-        <div className="bg-[#f7f7f7] rounded-2xl overflow-hidden flex flex-col h-full">
+        <div className="bg-[#f7f7f7]  rounded-2xl overflow-hidden flex flex-col ">
             {/* Image */}
-            <div className="relative w-full h-[260px]">
+            <div className="">
                 <img
                     src={image}
                     alt={title}
-                    className="object-cover"
+                    className=""
                 />
             </div>
 

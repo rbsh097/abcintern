@@ -30,7 +30,7 @@ export default function ProductSection() {
                             ABC International works with the best partners across the globe
                         </p>
                         <p className="text-sm sm:text-base lg:text-lg 2xl:text-xl">
-                            Having over “600” quality brands working together with us, here are some of our international partners.
+                            Having over <span className="oxygen-regular"> “600”</span> quality brands working together with us, here are some of our international partners.
                         </p>
                     </div>
                 </div>

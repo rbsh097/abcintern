@@ -1,35 +1,50 @@
 import Image from "next/image";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
+interface Business {
+    title: string;
+    subTitle: string;
+    logo: string;
+    description: string;
+    bgColor: string;
+    textColor: string;
+    accent: string;
+    link: string;
+    type: string;
+    visualImage: string;
+}
+
 const OurBusinesses = () => {
-    const businesses = [
+    const businesses: Business[] = [
         {
             title: "MAXXCARE",
             subTitle: "We Know How",
-            logo: "/logoaa.png",
+            logo: "/rbio.png",
             description: "Powering rapid market expansion for pharmaceutical and FMCG brands across Asia",
-            bgGradient: "from-[#ef662a] via-white/10 to-[#ef662a]",
+            bgColor: "#ef662a",
             textColor: "text-slate-800",
             accent: "text-cyan-700",
             link: "https://rbiomed.netlify.app/",
             type: "maxxcare",
+            visualImage: "/p1.png",
         },
         {
             title: "Natural",
             subTitle: "We Care",
             logo: "/logob.png",
-            description: "Science-led pet nutrition and FDA-grade medicines , quietly affordable",
-            bgGradient: "from-[#9444A1] via-white to-[#9444A1]",
+            description: "Science-led pet nutrition and FDA-grade medicines, quietly affordable",
+            bgColor: "#9444A1",
             textColor: "text-green-900",
             accent: "text-green-700",
             link: "https://rbvetshi.netlify.app/",
             type: "natural",
+            visualImage: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800",
         },
     ];
 
     return (
         <section className="py-28 bg-white">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-6 bg-white">
                 {/* Heading */}
                 <div className="text-center mb-20">
                     <h2 className="text-4xl md:text-5xl lg:text-5xl font-medium uppercase text-black mb-6 hover:text-[#ea9237]">
@@ -41,7 +56,7 @@ const OurBusinesses = () => {
                 </div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
                     {businesses.map((biz, index) => (
                         <a
                             key={index}
@@ -51,24 +66,19 @@ const OurBusinesses = () => {
                             className="group block h-full"
                         >
                             <div
-                                className={`relative h-full rounded-[2.5rem] p-12 
-                bg-gradient-to-br ${biz.bgGradient}
-                border border-black/5
-               
-                transition-all duration-500`}
+                                className="relative h-full rounded-[2.5rem] p-4 border border-black/5 transition-all duration-500"
+
                             >
-                                {/* Floating external icon */}
-                                <ExternalLink className="absolute top-8 right-8 w-5 h-5 text-black/30 group-hover:text-black transition" />
 
                                 {/* Logo */}
-                                <div className="h-44 flex items-center justify-center mb-10">
+                                <div className="h-16 flex items-center justify-center mb-10 ">
                                     {biz.logo ? (
                                         <Image
                                             src={biz.logo}
                                             alt={biz.title}
-                                            width={260}
-                                            height={120}
-                                            className="object-contain group-hover:scale-105 transition-transform duration-500"
+                                            width={160}
+                                            height={80}
+                                            className="transition-transform duration-500"
                                         />
                                     ) : (
                                         <div className="flex flex-col items-center">
@@ -85,22 +95,39 @@ const OurBusinesses = () => {
                                 </div>
 
                                 {/* Content */}
-                                <p
-                                    className={`text-2xl md:text-3xl font-medium leading-snug text-center text-black mb-12`}
-                                >
-                                    {biz.description}
-                                </p>
+                                <div className="p-5 rounded-[2rem]" style={{ backgroundColor: biz.bgColor }}>
+                                    <p
+                                        className=" text-white text-2xl md:text-2xl font-medium leading-snug text-center mb-12"
 
-                                {/* CTA */}
-                                <div className="flex justify-center">
-                                    <div
-                                        className="inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-full font-black uppercase tracking-widest text-xs
-                                        group-hover:bg-[#ea9237] transition-all duration-300 group-hover:gap-5 shadow-lg group-hover:shadow-[#ea9237]/20"
                                     >
-                                        Visit Website
-                                        <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                                        {biz.description}
+                                    </p>
+
+                                    {/* CTA */}
+                                    <div className="flex justify-center">
+                                        <div
+                                            className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-full font-black uppercase tracking-widest text-xs
+                                        group-hover:bg-gray-200 transition-all duration-300 group-hover:gap-5 shadow-lg group-hover:shadow-[#ea9237]/20"
+                                        >
+                                            Visit Website
+                                            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                                        </div>
                                     </div>
                                 </div>
+
+
+
+
+                                {/* Visual Image */}
+                                {/* <div className="mt-12 overflow-hidden rounded-2xl aspect-[12/4] relative shadow-inner">
+                                    <Image
+                                        src={biz.visualImage}
+                                        alt={`${biz.title} visual`}
+                                        fill
+                                        className="object-cover transition-transform duration-700"
+                                    />
+
+                                </div> */}
                             </div>
                         </a>
                     ))}

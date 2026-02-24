@@ -34,7 +34,7 @@ const PeopleHighlight = () => {
                         {/* Right Side: Image (Smaller) */}
                         <div className="lg:col-span-5 h-[650px] 2xl:h-[800px] lg:h-full relative min-h-[300px]">
                             <img
-                                src="/chairman.png"
+                                src="/chairman1.png"
                                 alt="Our Team"
                                 className="absolute inset-0 w-full h-full object-cover"
                             />

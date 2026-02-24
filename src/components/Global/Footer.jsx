@@ -69,7 +69,7 @@ const Footer = () => {
                                     <h4 className="font-bold text-lg mb-1 text-black group-hover:text-[#ea9237] transition-all">Call us</h4>
                                     <div className="flex items-center gap-3">
                                         <Phone className="w-4 h-4 text-[#ea9237]" />
-                                        <p className="text-gray-500 font-medium group-hover:text-black transition-colors">+95 9979386000</p>
+                                        <p className="oxygen-regular text-gray-500 font-medium group-hover:text-black transition-colors">+95 9979386000</p>
                                     </div>
                                 </a>
                                 <div className='flex flex-col gap-4'>

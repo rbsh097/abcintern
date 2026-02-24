@@ -7,34 +7,34 @@ export default function ImageGallery() {
 
     const images = [
         {
-            src: '/u.png',
-            title: 'Social Responsibility',
-            description: 'ABC International Singapore donated essential medicines to Cambodia’s border-affected communities in partnership with Pharmacie De La Gare and Ke Sinoun Hospital, Battambang.'
+            src: '/slider/1.png',
+            title: 'Great Place to Work Certified',
+            description: 'We’re thrilled to announce that ABC International has been certified as a Great Place to Work for 2025, making us only the second pharmaceutical company in Myanmar to receive this honor.'
         },
         {
-            src: '/u2.png',
+            src: '/slider/3.png',
             title: 'Asia Business Outlook',
             description: 'An Emerging Firm With A Vision To Lead The Market & Build A Name In The World Of Medicine.'
         },
         {
-            src: '/u3.png',
+            src: '/slider/4.png',
             title: 'Certification',
             description: 'ISO 9001:2015 Certified Pharmaceutical Warehouse Opening In Yangon Myanmar.'
         },
         {
-            src: '/foots/1.png',
+            src: '/slider/5.png',
             title: 'Myanmar Radiation Oncology Conference',
             description: 'Participated in the radiation conference. All radio- oncologist from Yangon , Mandalay Nay Pyi Taw , Taunggyi attend the conference.'
         },
         {
-            src: '/foots/2.png',
+            src: '/slider/6.png',
             title: 'ABC Derma Care',
             description: 'Luzo Club Meet at PyiNOoLwin - Engaging Dermatologist from Mandalay & TaungGyi'
         },
         {
-            src: '/foots/3.png',
-            title: 'Great Place to Work Certified',
-            description: 'We’re thrilled to announce that ABC International has been certified as a Great Place to Work for 2025, making us only the second pharmaceutical company in Myanmar to receive this honor.'
+            src: '/slider/7.png',
+            title: 'Social Responsibility',
+            description: 'ABC International sponsored Miss World Myanmar 2023, with Orofresh as the key sponsor, strengthening our global brand presence.'
         }
     ];
 

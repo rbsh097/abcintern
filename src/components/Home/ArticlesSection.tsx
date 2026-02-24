@@ -3,6 +3,12 @@ import React, { useState, useEffect } from "react";
 import ArticleCard from "./ArticleCard";
 import { Loader2 } from "lucide-react";
 
+const API_BASE = typeof window !== 'undefined' && (
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1' ||
+    window.location.hostname.startsWith('192.168.')
+) ? 'https://rbiomedsback.onrender.com' : 'https://rbiomedsback.onrender.com';
+
 const ArticlesSection = () => {
     const [articles, setArticles] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
@@ -10,7 +16,7 @@ const ArticlesSection = () => {
     useEffect(() => {
         const fetchArticles = async () => {
             try {
-                const response = await fetch('https://rbiomedsback.onrender.com/api/articles?site=abc-international');
+                const response = await fetch(`${API_BASE}/api/articles?site=abc-international`);
                 const data = await response.json();
                 // Get the latest 3 articles
                 setArticles(data.slice(0, 3));
@@ -27,11 +33,11 @@ const ArticlesSection = () => {
     return (
         <section className="bg-white py-20">
             <div className="container mx-auto px-6">
-                <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium uppercase text-black hover:text-[#ea9237] text-center mb-16 tracking-tighter font-black">Latest Insights</h1>
+                <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium uppercase text-black hover:text-[#ea9237] text-center mb-16 tracking-tighter"> Latest Insights</h1>
 
                 {loading ? (
                     <div className="flex justify-center py-20">
-                        <Loader2 className="w-8 h-8 text-[#ea9237] animate-spin" />
+                        <Loader2 className="w-8 h-8 text-[#ef662e] animate-spin" />
                     </div>
                 ) : articles.length === 0 ? (
                     <div className="text-center py-10">
@@ -54,10 +60,10 @@ const ArticlesSection = () => {
                 <div className="flex justify-center mt-12">
                     <a
                         href="/articles"
-                        className="group relative inline-flex items-center gap-3 px-10 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-[#ea9237] transition-all duration-300 shadow-xl hover:shadow-[#ea9237]/20 overflow-hidden"
+                        className="group relative inline-flex items-center gap-3 px-10 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-[#ef662e] transition-all duration-300 shadow-xl hover:shadow-[#ef662e]/20 overflow-hidden"
                     >
                         <span className="relative z-10 text-white">Explore More Blogs</span>
-                        <div className="relative z-10 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-[#ea9237] transition-all">
+                        <div className="relative z-10 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-[#ef662e] transition-all">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-5 h-5 transition-transform group-hover:translate-x-1"

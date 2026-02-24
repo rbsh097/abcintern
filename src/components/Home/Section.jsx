@@ -1,4 +1,7 @@
+"use client";
+import { useState } from "react";
 export default function Section() {
+    const [activeCard, setActiveCard] = useState("Our Vision");
     const leftCards = [
         {
             icon: "🏢",
@@ -47,7 +50,12 @@ export default function Section() {
                         {leftCards.map((card, index) => (
                             <div
                                 key={index}
-                                className="bg-white border border-gray-200 hover:border-0 hover:bg-gradient-to-br hover:from-white hover:to-[#fae57f] rounded-2xl p-8 group"
+                                onMouseEnter={() => setActiveCard(card.title)}
+                                className={`border rounded-2xl p-8 transition-all duration-500
+            ${activeCard === card.title
+                                        ? "bg-gradient-to-br from-white to-[#fae57f] border-white"
+                                        : "bg-white border-gray-200 hover:border-white hover:bg-gradient-to-br hover:from-white hover:to-[#fae57f]"
+                                    }`}
                             >
                                 <div className="flex items-start gap-4">
 
@@ -78,9 +86,14 @@ export default function Section() {
                     {/* Right Column - Cards */}
                     <div className="space-y-6">
                         {rightCards.map((card, index) => (
-                            <div
+                             <div
                                 key={index}
-                                className="bg-white border border-gray-200 hover:border-0 hover:bg-gradient-to-br hover:from-white hover:to-[#fae57f] rounded-2xl p-8 group"
+                                onMouseEnter={() => setActiveCard(card.title)}
+                                className={`border rounded-2xl p-8 transition-all duration-500
+            ${activeCard === card.title
+                                        ? "bg-gradient-to-br from-white to-[#fae57f] border-white"
+                                        : "bg-white border-gray-200 hover:border-white hover:bg-gradient-to-br hover:from-white hover:to-[#fae57f]"
+                                    }`}
                             >
                                 <div className="flex items-start gap-6">
                                     <div>

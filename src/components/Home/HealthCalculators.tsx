@@ -9,28 +9,28 @@ const calculators = [
     {
         type: "bmi",
         title: "BMI Calculator",
-        icon: "/calcy/3.png",
+        icon: "/calculator/3.png",
         href: "/calculators?type=bmi",
         description: "Calculate your Body Mass Index (BMI) to understand if you are at a healthy weight for your height. It's a quick and useful screening tool used globally by health professionals."
     },
     {
         type: "bmr",
         title: "BMR Calculator",
-        icon: "/calcy/1.png",
+        icon: "/calculator/1.png",
         href: "/calculators?type=bmr",
         description: "Determine your Basal Metabolic Rate (BMR) to understand exactly how many calories your body needs to maintain basic functions. Essential for planning nutrition and fitness goals."
     },
     {
         type: "bodyfat",
         title: "Body Fat Calculator",
-        icon: "/calcy/2.png",
+        icon: "/calculator/2.png",
         href: "/calculators?type=bodyfat",
         description: "Estimate your body fat percentage to get a clearer picture of your overall body composition and metabolic health, providing insights beyond just weight."
     },
     {
         type: "heartrate",
         title: "Heart Rate Zone",
-        icon: "/calcy/4.png",
+        icon: "/calculator/4.png",
         href: "/calculators?type=heartrate",
         description: "Identify your heart rate zones to optimize your training. Whether you're aiming for fat burn or peak performance, work out more effectively."
     }
