@@ -25,7 +25,7 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="flex items-center">
                     <Image
-                        src="/logoa.png"
+                        src="/logo.png"
                         alt="ABC International Logo"
                         width={140}
                         height={140}
