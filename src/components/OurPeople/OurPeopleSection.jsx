@@ -43,7 +43,7 @@ export default function OurPeopleSection() {
                     px-6 sm:px-8 lg:px-12
                     py-8 lg:py-0
                 ">
-                    <p className="text-sm sm:text-base lg:text-lg text-black/80 font-medium leading-relaxed max-w-7xl">
+                    <p className="text-sm sm:text-base lg:text-lg text-black/80 font-medium leading-relaxed md:max-w-7xl 2xl:max-w-full">
                         ABC International is backed by a team of like-minded and highly experienced professionals who came together with a shared vision of creating a trusted healthcare organization of repute, driven by values, customer centricity, ethical governance, and CSR where employees are recognized for the unique contributions they make every day.
                     </p>
                 </div>

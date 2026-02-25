@@ -66,20 +66,20 @@ export default function HeroSection() {
                     <div
                         className="absolute inset-0 flex flex-col gap-6 items-center mt-20 text-center px-4 lg:px-6"
                     >
-                        <span className="bg-[#ea9237] px-4 py-2 rounded-full text-white font-medium text-sm lg:text-base">
+                        <span className="bg-[#ea9237] px-4 py-2 rounded-full text-white font-medium text-sm lg:text-base 2xl:text-lg">
                             ABC International Limited.
                         </span>
 
                         <h1 className="px-2 lg:px-6">
-                            <span className="block text-xl sm:text-2xl lg:text-[2.4rem] text-gray-500 leading-tight">
+                            <span className="block text-xl sm:text-2xl lg:text-[2.4rem] 2xl:text-[3rem] text-gray-500 leading-tight">
                                 Bridging Therapy Gaps with Novel,
                             </span>
-                            <span className="block text-2xl sm:text-3xl lg:text-[2.4rem] leading-[1.1] text-black font-bold mt-2">
+                            <span className="block text-2xl sm:text-3xl lg:text-[2.4rem] 2xl:text-[2.9rem] md:leading-[1.1] 2xl:leading-none text-black font-bold mt-2">
                                 High Quality & Affordable Medicines
                             </span>
                         </h1>
 
-                        <p className="text-gray-700 text-sm sm:text-base lg:text-md max-w-xl">
+                        <p className="text-gray-700 text-sm sm:text-base 2xl:text-2xl lg:text-md max-w-xl">
                             To become one of the most trusted and respected healthcare organizations admired by our stakeholders for our customer-centricity, governed by strong core values, ethical corporate governance, social responsibility, and a deep commitment to employee recognition and empowerment.
                         </p>
 
@@ -103,7 +103,7 @@ export default function HeroSection() {
 
                     {/* CAROUSEL */}
                     <div
-                        className="relative min-h-[500px] lg:min-h-[700px]
+                        className="relative min-h-[500px] lg:min-h-[700px] 2xl:min-h-[780px]
                                    bg-cover rounded-[2rem] bg-no-repeat transition-all duration-700"
                         style={{ backgroundImage: `url('${slides[currentSlide].image}')` }}
                     >
@@ -144,7 +144,7 @@ export default function HeroSection() {
 
                     {/* THIRD IMAGE */}
                     <div
-                        className="min-h-[220px] lg:min-h-[300px] bg-cover rounded-[2rem]"
+                        className="min-h-[220px] lg:min-h-[300px] 2xl:min-h-[400px] bg-cover rounded-[2rem]"
                         style={{ backgroundImage: "url('/h.png')" }}
                     />
                 </div>

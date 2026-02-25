@@ -55,7 +55,7 @@ export default function ImageGallery() {
                                 className={`
                                     relative rounded-3xl overflow-hidden cursor-pointer transition-all duration-700
                                     w-full
-                                    h-[400px] md:h-[600px] 2xl:h-[750px]
+                                    h-[400px] md:h-[600px] 2xl:h-[600px]
                                     ${isHovered
                                         ? 'md:w-[700px] 2xl:w-[900px] md:flex-grow'
                                         : 'md:w-[100px] 2xl:w-[150px] md:flex-none'
