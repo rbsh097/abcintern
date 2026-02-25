@@ -59,7 +59,7 @@ export default function HeroSection() {
 
                 {/* FIRST SECTION */}
                 <div
-                    className="relative w-full lg:w-2/3 rounded-[2rem] bg-center bg-no-repeat
+                    className="relative w-full lg:w-2/3 2xl:w-2/3 rounded-[2rem] bg-center bg-no-repeat
                                min-h-[520px] lg:min-h-[700px] flex flex-col justify-center"
                     style={{ backgroundImage: "url('/h11.png')", backgroundSize: "cover" }}
                 >
@@ -144,7 +144,7 @@ export default function HeroSection() {
 
                     {/* THIRD IMAGE */}
                     <div
-                        className="min-h-[220px] lg:min-h-[300px] 2xl:min-h-[400px] bg-cover rounded-[2rem]"
+                        className="min-h-[220px] lg:min-h-[300px] 2xl:min-h-[350px] md:bg-cover rounded-[2rem]"
                         style={{ backgroundImage: "url('/h.png')" }}
                     />
                 </div>

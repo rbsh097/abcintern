@@ -60,7 +60,7 @@ const ArticlesSection = () => {
                 <div className="flex justify-center mt-12">
                     <a
                         href="/articles"
-                        className="group relative inline-flex items-center gap-3 px-10 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-[#ef662e] transition-all duration-300 shadow-xl hover:shadow-[#ef662e]/20 overflow-hidden"
+                        className="group relative inline-flex items-center gap-3 px-10 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-[#ea9237] transition-all duration-300 shadow-xl hover:shadow-[#ef662e]/20 overflow-hidden"
                     >
                         <span className="relative z-10 text-white">Explore More Blogs</span>
                         <div className="relative z-10 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-[#ef662e] transition-all">

@@ -149,7 +149,7 @@ const CalculatorContent = () => {
                         Empower Your Health With <br className="hidden md:block" /> Our Professional Tools
                     </h2>
                     <p className="max-w-7xl mx-auto text-gray-500 text-base md:text-lg leading-relaxed">
-                        At Rbiomeds, we believe that understanding your metrics is the first step toward lasting wellness.
+                        At ABC International, we believe that understanding your metrics is the first step toward lasting wellness.
                         Our calculators are designed with precision and clinical accuracy to provide you with insights into
                         your body's composition, metabolism, and health status.
                     </p>

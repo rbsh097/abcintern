@@ -111,8 +111,8 @@ const ArticlesContent = () => {
                     <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium uppercase text-black mb-6 hover:text-[#ea9237]">
                         Our Journal
                     </h1>
-                    <p className="text-xl text-gray-600 max-w-2xl font-medium">
-                        Insights, breakthroughs, and wellness guides from the world of Rbiomeds.
+                    <p className="text-xl text-gray-600 max-w-xl font-medium">
+                        Insights, breakthroughs, and wellness guides from the world of ABC International.
                     </p>
                 </div>
 
@@ -151,7 +151,7 @@ const ArticlesContent = () => {
                                     <img
                                         src={article.image}
                                         alt={article.title}
-                                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+                                        className="object-cover transition-all duration-500 group-hover:scale-110"
                                     />
                                     <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
                                 </div>
